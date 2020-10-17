@@ -1,4 +1,3 @@
 <!-- docs/_sidebar.md -->
 
-* [首页](zh-cn/)
-* [指南](zh-cn/guide "The greatest guide in the world")
+* [轻量级智能穿戴开发](zh-cn/)
