@@ -2,13 +2,14 @@
 
 ![logo](assets/evm-logo-text.svg)
 
-# docsify <small>3.5</small>
+# EVM & HarmonyOS development course
 
-> 一个神奇的文档网站生成器。
+> EVM和鸿蒙OS开发课程
 
-- 简单、轻便 (压缩后 ~21kB)
-- 无需生成 html 文件
-- 众多主题
+- 简单易上手
+- 类HTML/CSS/JavaScript语法，是的，全是你熟悉的编程语言
+- 众多应用案例
 
 [GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](#docsify)
+[Get Started](/zh-cn/)
+
