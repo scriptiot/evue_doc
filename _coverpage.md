@@ -2,7 +2,7 @@
 
 ![logo](assets/evm-logo-text.svg)
 
-# EVM & HarmonyOS development course
+# EVM & HarmonyOS Development Courses
 
 > EVM和鸿蒙OS开发课程
 
