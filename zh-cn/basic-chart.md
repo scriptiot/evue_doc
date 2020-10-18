@@ -21,11 +21,12 @@
 | datasets | Array<Object> | - | 是 | 数据集合，柱状图和线性图必须设置数据集合。可以设置多条数据集及其背景色，详见[表2](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-basic-chart-0000001055173380#ZH-CN_TOPIC_0000001055173380__zh-cn_topic_0000001050030933_table13810518157)。 |
 
 **表1** options定义
-| 名称   | 类型   | 默认值 | 必填 | 描述                                                         |
-| ------ | ------ | ------ | ---- | ------------------------------------------------------------ |
-| xAxis  | Object | -      | 是   | x轴参数设置。可以设置x轴最小值、最大值、刻度数以及是否显示。详见[表3](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-basic-chart-0000001055173380#ZH-CN_TOPIC_0000001055173380__zh-cn_topic_0000001050030933_table11312112919528)。 |
-| yAxis  | Object | -      | 是   | y轴参数设置。可以设置y轴最小值、最大值、刻度数以及是否显示。详见[表4](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-basic-chart-0000001055173380#ZH-CN_TOPIC_0000001055173380__zh-cn_topic_0000001050030933_table893622720553)。 |
-| series | Object | -      | 否   | 数据序列参数设置。可以设置1）线的样式，如线宽、是否平滑；2）设置线最前端位置白点的样式和大小。详见[表6](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-basic-chart-0000001055173380#ZH-CN_TOPIC_0000001055173380__zh-cn_topic_0000001050030933_table7790183513918)和[表7](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-basic-chart-0000001055173380#ZH-CN_TOPIC_0000001055173380__zh-cn_topic_0000001050030933_table1435760101317)。<br/>**说明**：仅线型图支持。 |
+
+| **名称** | **类型** | **默认值** | **必填** | **描述**                                                     |
+| -------- | -------- | ---------- | -------- | ------------------------------------------------------------ |
+| xAxis    | Object   | -          | 是       | x轴参数设置。可以设置x轴最小值、最大值、刻度数以及是否显示。详见[表3](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-basic-chart-0000001055173380#ZH-CN_TOPIC_0000001055173380__zh-cn_topic_0000001050030933_table11312112919528)。 |
+| yAxis    | Object   | -          | 是       | y轴参数设置。可以设置y轴最小值、最大值、刻度数以及是否显示。详见[表4](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-basic-chart-0000001055173380#ZH-CN_TOPIC_0000001055173380__zh-cn_topic_0000001050030933_table893622720553)。 |
+| series   | Object   | -          | 否       | 数据序列参数设置。可以设置1）线的样式，如线宽、是否平滑；2）设置线最前端位置白点的样式和大小。详见[表6](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-basic-chart-0000001055173380#ZH-CN_TOPIC_0000001055173380__zh-cn_topic_0000001050030933_table7790183513918)和[表7](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-basic-chart-0000001055173380#ZH-CN_TOPIC_0000001055173380__zh-cn_topic_0000001050030933_table1435760101317)。<br/>**说明**：仅线型图支持。 |
 
 **表2** datasets定义
 
