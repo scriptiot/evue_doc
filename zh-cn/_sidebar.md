@@ -1,4 +1,4 @@
-<!-- docs/_sidebar.md -->
+<!-- zh-cn/_sidebar.md -->
 
 * 轻量级智能穿戴开发
     * 框架说明

@@ -43,15 +43,15 @@
 
 |  名称   | 类型  |  默认值   | 必填  | 描述  |
 |  ----  | ----  |  ----  | ----  | ----  |
-| color | <color> | #ffffff | 否 | 设置跑马灯中文字的文本颜色。 |
-| font-size | <length> | 30          | 否 | 设置跑马灯中文字的文本尺寸。目前仅支持30px和38px 两个字体大小。 |
+| color | \<color\> | #ffffff | 否 | 设置跑马灯中文字的文本颜色。 |
+| font-size | \<length\> | 30          | 否 | 设置跑马灯中文字的文本尺寸。目前仅支持30px和38px 两个字体大小。 |
 | font-family | string | HYQiHei-65S | 否 | 字体。目前仅支持HYQiHei-65S 字体。 |
 | display | string | flex  | 否 | 确定该元素视图框的类型，该值暂不支持动态修改。可选值为：<br/>*flex*弹性布局<br/>*none*：不渲染此元素 |
-| width | <length> | - | 否 | 设置组件自身的宽度。未设置时组件宽度默认为0。 |
-| height | <length> | - | 否 | 设置组件自身的宽度。未设置时组件宽度默认为0。 |
-| padding | <length> | 0 | 否 | 使用简写属性设置所有的内边距属性。 |
-| border-width | <length> | 0 | 否 | 使用简写属性设置元素的所有边框宽度。 |
-| border-color | <color> | black | 否 | 使用简写属性设置元素的所有边框颜色。 |
-| border-radius | <length> | - | 否 | border-radius属性是设置元素的外边框圆角半径。 |
-| background-color | <color> | - | 否 | 设置背景颜色。 |
-| [left\|top] | <length> | - | 否 | left|
+| width | \<length\> | - | 否 | 设置组件自身的宽度。未设置时组件宽度默认为0。 |
+| height | \<length\> | - | 否 | 设置组件自身的宽度。未设置时组件宽度默认为0。 |
+| padding | \<length\> | 0 | 否 | 使用简写属性设置所有的内边距属性。 |
+| border-width | \<length\> | 0 | 否 | 使用简写属性设置元素的所有边框宽度。 |
+| border-color | \<color\> | black | 否 | 使用简写属性设置元素的所有边框颜色。 |
+| border-radius | \<length\> | - | 否 | border-radius属性是设置元素的外边框圆角半径。 |
+| background-color | \<color\> | - | 否 | 设置背景颜色。 |
+| [left\|top] | \<length\> | - | 否 | left|

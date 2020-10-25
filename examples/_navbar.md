@@ -1,4 +1,4 @@
-<!-- zh-cn/_navbar.md -->
+<!-- _navbar.md -->
 
 * [首页](/)
 
