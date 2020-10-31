@@ -44,7 +44,69 @@
 | text-overflow | string | clip | 否 | 可选值为：<br/>clip：将文本根据父容器大小进行裁剪显示；<br/>ellipsis：根据父容器大小显示，显示不下的文本用省略号代替。 |
 | font-family | string | HYQiHei-65S | 否 | 字体。目前仅支持HYQiHei-65S 字体。 |
 
-**注意事项：**
+# DEMO
 
-1. background-image暂不支持；
+构成一个页面的三个部分，`index.hml`,`index.css`,`index.js`。
+
+>  请注意默认还有一个[app.js](/zh-cn/js-file "app.js")文件。
+
+代码仓库地址：`http://gitlab.evmiot.com:12306/wzedmund/evm-jsfwk-littlevgl-qt/tree/dev/test/test-text`
+
+**index.hml**
+
+```html
+<div style="left: 0px;top: 0px;width: 455px;height: 455px;border-width: 1px;border-style: solid;border-color: white;margin: 50px;background-color: black;">
+    <text style="left: 70px;top: 70px;width: 100px;height: 30px;font-size: 20px;color: white;border-width: 1px;border-style: solid;border-color: white;">text</text>
+    <text style="left: 70px;top: 110px;width: 150px;height: 30px;font-size: 20px;color: white;border-width: 1px;border-style: solid;border-color: white;letter-spacing: 5px;">letter space</text>
+    <text style="left: 70px;top: 150px;width: 150px;height: 30px;font-size: 20px;color: white;border-width: 1px;border-style: solid;border-color: white;text-align: center;">text align</text>
+    <text style="left: 70px;top: 190px;width: 150px;height: 30px;font-size: 20px;color: white;border-width: 1px;border-style: solid;border-color: white;text-overflow: clip;">text overflow hello world</text>
+    <text style="left: 70px;top: 230px;width: 100px;height: 30px;font-size: 20px;color: white;border-width: 1px;border-style: solid;border-color: white;text-decoration: underline;">text decoration</text>
+    <text style="left: 70px;top: 270px;width: 100px;height: 30px;font-size: 20px;color: white;border-width: 1px;border-style: solid;border-color: white;line-height: 20px;">line height</text>
+    <text style="left: 70px;top: 310px;font-size: 20px;color: white;">display none</text>
+    <text style="left: 70px;top: 330px;background-color: red;opacity: 0.5;">opacity</text>
+</div>
+```
+
+**index.css**
+
+```css
+.container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+}
+```
+
+**index.js**
+
+```javascript
+export default {
+    data: {
+        title: 'show-test-text'
+    }
+}
+```
+
+## 执行命令
+
+下面可以在命令行输入以下命令，体验下DEMO，请根据自己实际的目录以及操作系统输入命令：
+
+**Linux**
+
+```shell
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-text/
+```
+
+**Windows**
+
+```powershell
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-text/
+```
+
+## 运行截图
+
+一切顺利的话，你将会看到如下页面：
+
+![](http://statics.evmiot.com/evue_20201031221653.jpg)
 

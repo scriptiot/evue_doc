@@ -1,19 +1,13 @@
 > 子组件  
->
-> 属性
->
-> 事件
->
+> 属性  
+> 事件  
 > 样式
 
 进度条，用于显示内容加载或操作处理进度。
 
 
-
 # 子组件
-
 不支持。
-
 
 # 属性
 
@@ -83,3 +77,96 @@
 | border-radius | \<length\> | - | 否 | border-radius属性是设置元素的外边框圆角半径。 |
 | background-color | \<color\> | - | 否 | 设置背景颜色。 |
 | [left\|top] | \<length\> | - | 否 | left|
+
+# DEMO
+
+构成一个页面的三个部分，`index.hml`,`index.css`,`index.js`。
+
+>  请注意默认还有一个[app.js](/zh-cn/js-file "app.js")文件。
+
+代码仓库地址：`http://gitlab.evmiot.com:12306/wzedmund/evm-jsfwk-littlevgl-qt/tree/dev/test/test-progress`
+
+**index.hml**
+
+```html
+<div class="container">
+    <list class="list-container">
+        <list-item class="listitem">
+            <progress type="horizontal" percent="30"></progress>
+            <progress type="arc" percent="30" style="padding: 5px; width: 80px; height: 80px;stroke-width: 10px;"></progress>
+        </list-item>
+        <list-item class="listitem">
+            <progress type="horizontal" percent="50"></progress>
+            <progress percent="50" style="padding: 5px; width: 80px; height: 80px;margin-top: 2px;color: red;"></progress>
+        </list-item>
+        <list-item class="listitem">
+            <progress type="horizontal" percent="80"></progress>
+            <progress percent="80" style="padding: 5px; width: 80px; height: 80px;border-width: 1px;border-color: red;border-radius: 50%;"></progress>
+        </list-item>
+    </list>
+</div>
+```
+
+**index.css**
+
+```css
+.container {
+    display: flex;
+    width: 454px;
+    height: 454px;
+    border-width: 2px;
+    border-radius: 2px;
+    margin: 0px;
+    padding: 0px;
+    background-color: green;
+}
+
+.list-container {
+    width: 300px;
+    height: 350px;
+    left: 75px;
+    top: 50px;
+    background-color: yellow;
+}
+
+.listitem {
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: 100px;
+    margin: 0px;
+    padding: 5px;
+}
+```
+
+**index.js**
+
+```javascript
+export default {
+    data: {
+        title: 'HelloWorld'
+    }
+}
+```
+
+## 执行命令
+
+下面可以在命令行输入以下命令，体验下DEMO，请根据自己实际的目录以及操作系统输入命令：
+
+**Linux**
+
+```shell
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-progress/
+```
+
+**Windows**
+
+```powershell
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-progress/
+```
+
+## 运行截图
+
+一切顺利的话，你将会看到如下页面：
+
+![](http://statics.evmiot.com/evue_20201031221344.jpg)

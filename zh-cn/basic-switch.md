@@ -1,15 +1,11 @@
-> 子组件
->
-> 属性
->
-> 事件
->
+> 子组件  
+> 属性  
+> 事件  
 > 样式
 
 开关选择器，通过开关，开启或关闭某个功能。
 
 # 子组件
-
 不支持。
 
 # 属性
@@ -47,5 +43,96 @@
 | display                           | string     | flex   | 否   | 确定一个元素所产生的框的类型，可选值为：<br/>**flex：**弹性布局。<br/>**none：**不渲染此元素。 |
 | [left\|top]                       | \<length\> | 否     | 否   | left\|top需要配合position样式使用，来确定元素的偏移位置。<br/>left属性规定元素的左边缘。该属性定义了定位元素左外边距边界与其包含块左边界之间的偏移。<br/>top属性规定元素的顶部边缘。该属性定义了一个定位元素的上外边距边界与其包含块上边界之间的偏移。 |
 
+# DEMO
 
+构成一个页面的三个部分，`index.hml`,`index.css`,`index.js`。
+
+>  请注意默认还有一个[app.js](/zh-cn/js-file "app.js")文件。
+
+代码仓库地址：`http://gitlab.evmiot.com:12306/wzedmund/evm-jsfwk-littlevgl-qt/tree/dev/test/test-switch`
+
+**index.hml**
+
+```html
+<div class="container">
+    <list class="list-container">
+        <list-item class="listitem">
+            <switch checked="false" style="width: 150px;height: 30px;"></switch>
+        </list-item>
+        <list-item class="listitem">
+            <switch checked="true" style="width: 50px;padding: 5px;margin-top: 20px;"></switch>
+        </list-item>
+        <list-item class="listitem">
+            <switch checked="true" style="border-width:1px; border-color: red;border-radius: 10px;"></switch>
+        </list-item>
+        <list-item class="listitem">
+            <switch checked="true" style="background-color: red;"></switch>
+        </list-item>
+    </list>
+</div>
+```
+
+**index.css**
+
+```css
+.container {
+    display: flex;
+    width: 454px;
+    height: 454px;
+    border-width: 2px;
+    border-radius: 2px;
+    margin: 0px;
+    padding: 0px;
+    background-color: green;
+}
+
+.list-container {
+    width: 300px;
+    height: 300px;
+    left: 70px;
+    top: 70px;
+    background-color: yellow;
+}
+
+.listitem {
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    margin: 0px;
+    padding: 10px;
+}
+```
+
+**index.js**
+
+```javascript
+export default {
+    data: {
+        title: 'test-switch'
+    }
+}
+```
+
+## 执行命令
+
+下面可以在命令行输入以下命令，体验下DEMO，请根据自己实际的目录以及操作系统输入命令：
+
+**Linux**
+
+```shell
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-switch/
+```
+
+**Windows**
+
+```powershell
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-switch/
+```
+
+## 运行截图
+
+一切顺利的话，你将会看到如下页面：
+
+![](http://statics.evmiot.com/evue_20201031224748.jpg)
 

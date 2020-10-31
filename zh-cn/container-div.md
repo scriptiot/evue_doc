@@ -2,6 +2,7 @@
 > 属性  
 > 事件  
 > 样式  
+> DEMO  
 
 基础容器，用作页面结构的根节点或将内容进行分组。
 
@@ -67,4 +68,75 @@
 
 
 # DEMO
+
+构成一个页面的三个部分，`index.hml`,`index.css`,`index.js`。
+
+>  请注意默认还有一个[app.js](/zh-cn/js-file "app.js")文件。
+
+代码仓库地址：`http://gitlab.evmiot.com:12306/wzedmund/evm-jsfwk-littlevgl-qt/tree/dev/test/test-div`
+
+**index.hml**
+
+```html
+<div style="width: 350px;height: 350px;border-width: 1px;border-style: solid;border-color: green;left: 50px;top: 50px;margin: 50px;padding: 10px;">
+    <div style="width: 100px;height: 100px;">
+        <text>helloworld</text>
+    </div>
+    <div style="left: 100px;width: 100px;height: 100px;background-color: red;opacity: 0.5;">
+        <text>opacity</text>
+    </div>
+    <div style="left: 200px;width: 100px;height: 100px;background-color: red;display: none;">
+        <text>display none</text>
+    </div>
+    <div style="left: 0px;top: 100px;width: 100px;height: 100px;border-width: 1px;border-style: solid;border-color: yellow;">
+        <text>border</text>
+    </div>
+    <div style="left: 100px;top: 100px;width: 100px;height: 100px;background-color: blue;visibility: hidden;color: white;">
+        <text>visibility</text>
+    </div>
+</div>
+```
+
+**index.css**
+
+```css
+.container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+}
+```
+
+**index.js**
+
+```javascript
+export default {
+    data: {
+        title: 'show-test-div'
+    }
+}
+```
+
+## 执行命令
+
+下面可以在命令行输入以下命令，体验下DEMO，请根据自己实际的目录以及操作系统输入命令：
+
+**Linux**
+
+```shell
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-div/
+```
+
+**Windows**
+
+```powershell
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-div/
+```
+
+## 运行截图
+
+一切顺利的话，你将会看到如下页面：
+
+![](http://statics.evmiot.com/evue_20201031192000.png)
 

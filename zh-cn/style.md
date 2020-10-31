@@ -1,7 +1,5 @@
-> 行内样式
->
-> 选择器样式
->
+> 行内样式  
+> 选择器样式  
 > 动态绑定样式
 
 在[构建布局](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-layout-0000001056483134#ZH-CN_TOPIC_0000001056483134)中，已经可以运行应用并显示结果。组件标签中类似`style="width:454px;height:454px;"`的语句即为样式设置语句，通过样式可以设置组件的显示大小、背景颜色、对齐方式等属性。本章节以<div>和<text>组件为例来介绍如何设置样式，样式主要有三种设置方式：行内样式、选择器样式和动态绑定样式。三种方式设置的样式效果一致，只是写法不同。
@@ -31,7 +29,7 @@
 - 针对每个组件都要设置样式。
 - 如果多个组件需要设置相同的样式，则每个组件都写同样的样式，导致代码冗余；而且修改样式时，需要修改所有代码，工作量大。
 
-针对以上问题，我们可以采用选择器样式，将所有的样式代码写到pages/index/index.css文件中，然后通过class、id等方式和组件关联起来。以上节中的代码为例，修改后的代码如下：
+针对以上问题，我们可以采用选择器样式，将所有的样式代码写到`pages/index/index.css`文件中，然后通过class、id等方式和组件关联起来。以上节中的代码为例，修改后的代码如下：
 
 ```css
 /* index.css */
@@ -72,7 +70,7 @@
 
 在[行内样式](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-style-0000001055883166#ZH-CN_TOPIC_0000001055883166__zh-cn_topic_0000001050020757_section8498147174113)和[选择器样式](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-style-0000001055883166#ZH-CN_TOPIC_0000001055883166__zh-cn_topic_0000001050020757_section192248504211)中，样式设置方式是静态的，即代码开发中设置的样式在程序运行的时候不能更改，这种方式限制了程序的显示效果。如果要在程序运行过程中动态地改变样式，就需要用到动态绑定样式。所谓动态绑定就是值和变量动态关联，随着值的变更而显示不同的效果。动态绑定的使用方式为{{变量名}}，其中变量名是js文件中data对象的属性值。目前动态绑定样式只支持绑定行内样式。
 
-在下面代码中，text的字体大小和data中的fontSize属性绑定，显示的文字和data中的title属性绑定：
+在下面代码中，text的字体大小和data中的font-size属性绑定，显示的文字和data中的title属性绑定：
 
 ```html
 <!-- index.hml -->
@@ -84,7 +82,7 @@
 </div>
 ```
 
-```java
+```javascript
 // index.js:
 import router from '@system.router'
  

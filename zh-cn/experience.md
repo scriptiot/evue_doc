@@ -1,105 +1,308 @@
-> 搭建环境和创建项目
->
-> JS主体介绍
->
+> 搭建环境和创建项目  
+> JS主体介绍  
 > 运行应用
 
 # 搭建环境和创建项目
 
-- 搭建环境：请参考[下载和安装软件](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/software_install-0000001053582415)和[配置开发环境](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/environment_config-0000001052902427)。
-- 创建项目：请参考[创建一个新的工程](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/create_new_project-0000001053342414)，设备类型选择“Lite Wearable”。
+1. 先从仓库克隆项目
+
+   ```shell
+   git clone https://github.com/scriptiot/evue
+   ```
+
+2. 进入仓库所在目录
+
+   ```shell
+   cd ~/evue
+   ```
 
 # JS主体介绍
 
-HelloWorld工程目录如下图所示：
+LiteWearable工程目录如下图所示：
 
-**图1** 目录结构
+**目录结构：**
 
-![](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20200922162411.10498504611100906543002201012100:50510922084431:2800:20D9F58418B9FDEFE7AB836C72266AFB1E3EC2342CC00AA9B6759A1A4984BCBC.png?needInitFileName=true?needInitFileName=true)
+```shell
+.
+├── app.js
+├── common
+│   └── images
+│       ├── appbar.camera.flash.auto.selected.bin
+│       ├── appbar.chevron.right.bin
+│       ├── appbar.control.fastforward.bin
+│       ├── appbar.control.pause.bin
+│       ├── appbar.control.rewind.bin
+│       ├── appbar.fingerprint.bin
+│       ├── appbar.foot.bin
+│       ├── appbar.forest.bin
+│       ├── appbar.new.window.bin
+│       ├── appbar.repeat.bin
+│       ├── appbar.return.bin
+│       ├── appbar.smiley.angry.bin
+│       ├── appbar.smiley.cry.bin
+│       ├── appbar.smiley.frown.bin
+│       ├── appbar.smiley.glasses.bin
+│       ├── appbar.smiley.grin.bin
+│       ├── appbar.smiley.kiki.bin
+│       ├── appbar.smiley.squint.bin
+│       ├── appbar.smiley.tounge.bin
+│       ├── appbar.smiley.what.bin
+│       ├── appbar.sound.3.bin
+│       ├── distance.bin
+│       ├── dribbble.bin
+│       ├── evernote.bin
+│       ├── flipboard.bin
+│       ├── girl-128×128.bin
+│       ├── girl-150×150.bin
+│       ├── hotpower.bin
+│       ├── instagram.bin
+│       ├── microphone-64×64.bin
+│       ├── microphone.bin
+│       ├── phone-64×64.bin
+│       ├── pingfanzhilu.bin
+│       ├── pocket.bin
+│       ├── rss.bin
+│       ├── speed.bin
+│       ├── sun.bin
+│       ├── time.bin
+│       ├── twitter.bin
+│       ├── voice-64×64.bin
+│       ├── voice.bin
+│       ├── whatsapp.bin
+│       ├── youtube.bin
+│       └── yuyin.bin
+├── pages
+│   ├── call
+│   │   ├── index.css
+│   │   ├── index.hml
+│   │   └── index.js
+│   ├── chart
+│   │   ├── index.css
+│   │   ├── index.hml
+│   │   └── index.js
+│   ├── index
+│   │   ├── index.css
+│   │   ├── index.hml
+│   │   └── index.js
+│   ├── list
+│   │   ├── index.css
+│   │   ├── index.hml
+│   │   └── index.js
+│   ├── music
+│   │   ├── index.css
+│   │   ├── index.hml
+│   │   └── index.js
+│   ├── progress
+│   │   ├── index.css
+│   │   ├── index.hml
+│   │   └── index.js
+│   ├── ring
+│   │   ├── index.css
+│   │   ├── index.hml
+│   │   └── index.js
+│   └── weather
+│       ├── index.css
+│       ├── index.hml
+│       └── index.js
+└── viewmodel
+    ├── framework.js
+    └── viewmodel.js
+```
 
-**pages/index/index.hml：**此文件定义了index页面的布局，在index页面中用到的组件，以及这些组件的层级关系。index.hml文件包含了一个text组件，内容为“Hello World”。
+**pages/index/index.hml：**此文件定义了index页面的布局，在index页面中用到的组件，以及这些组件的层级关系。该页面是智能手表应用的菜单首页。
 
 ```html
 <div class="container">
-    <text class="title">
-      Hello {{title}}
-    </text>
+    <text style="top: 30px;color: white;width: 454px;height: 35px;text-align: center;font-family: simsun;font-size: 30px;">菜单</text>
+    <list class="list-container">
+        <list-item class="list-item" url="pages/index/index" onclick="onPageRedirect">
+            <image src="./common/images/dribbble.bin" class="app-icon"></image>
+            <text class="maintitle">首页</text>
+            <!-- <text class="subtitle">100.42</text>
+            <text class="maintitle-note">公里</text> -->
+            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+        </list-item>
+        <list-item class="list-item" url="pages/call/index" onclick="onPageRedirect">
+            <image src="./common/images/evernote.bin" class="app-icon"></image>
+            <text class="maintitle">电话</text>
+            <!-- <text class="subtitle">07:23:39</text> -->
+            <!-- <text class="maintitle-note">公里</text> -->
+            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+        </list-item>
+        <list-item class="list-item" url="pages/chart/index" onclick="onPageRedirect">
+            <image src="./common/images/flipboard.bin" class="app-icon"></image>
+            <text class="maintitle">健身曲线</text>
+            <!-- <text class="subtitle">2755</text>
+            <text class="maintitle-note">千卡</text> -->
+            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+        </list-item>
+        <list-item class="list-item" url="pages/music/index" onclick="onPageRedirect">
+            <image src="./common/images/pocket.bin" class="app-icon"></image>
+            <text class="maintitle">音乐</text>
+            <!-- <text class="subtitle">100.42</text>
+            <text class="maintitle-note">公里</text> -->
+            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+        </list-item>
+        <list-item class="list-item" url="pages/weather/index" onclick="onPageRedirect">
+            <image src="./common/images/rss.bin" class="app-icon"></image>
+            <text class="maintitle">天气</text>
+            <!-- <text class="subtitle">07:23:39</text> -->
+            <!-- <text class="maintitle-note">公里</text> -->
+            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+        </list-item>
+        <list-item class="list-item" url="pages/list/index" onclick="onPageRedirect">
+            <image src="./common/images/twitter.bin" class="app-icon"></image>
+            <text class="maintitle">跑步记录</text>
+            <!-- <text class="subtitle">2755</text>
+            <text class="maintitle-note">千卡</text> -->
+            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+        </list-item>
+        <list-item class="list-item" url="pages/ring/index" onclick="onPageRedirect">
+            <image src="./common/images/whatsapp.bin" class="app-icon"></image>
+            <text class="maintitle">更新升级</text>
+            <!-- <text class="subtitle">2755</text>
+            <text class="maintitle-note">千卡</text> -->
+            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+        </list-item>
+    </list>
 </div>
 ```
 
-**pages/index/index.css：**此文件定义了index页面的样式。index.css文件定义了“container”和“title”的样式。
+**pages/index/index.css：**此文件定义了index布局和页面的样式。
 
 ```css
 .container {
-  display: flex;  
-  justify-content: center;  
-  align-items: center;  
-  left: 0px;  
-  top: 0px; 
-  width: 454px;  
-  height: 454px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    width: 454px;
+    height: 454px;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
 }
-.title {
-  font-size: 30px;  
-  text-align: center;  
-  width: 200px;  
-  height: 100px;
+
+.list-container {
+    width: 300px;
+    height: 300px;
+    left: 75px;
+    top: 90px;
+    border-width: 0px;
+    background-color: black;
+}
+
+.list-item {
+    width: 454px;
+    height: 100px;
+    left: 0px;
+    background-color: black;
+    border-width: 0px;
+    border-color: red;
+}
+
+.app-icon {
+    top: 20px;
+    left: 100px;
+}
+
+.arrow-icon {
+    top: 18px;
+    left: 300px;
+}
+
+.maintitle {
+    top: 40px;
+    left: 180px;
+    color: white;
+    width: 130px;
+    height: 35px;
+    font-family: simsun;
+    font-size: 30px;
+}
+
+.maintitle-note {
+    top: 58px;
+    left: 260px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    font-family: simsun;
+    font-size: 20px;
+}
+
+.subtitle {
+    top: 20px;
+    left: 180px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    font-family: simsun;
+    font-size: 20px;
 }
 ```
 
-**pages/index/index.js：**此文件定义了index页面的业务逻辑，比如数据绑定，事件处理等。此处，变量“title”采用数据绑定的形式定义为字符串“World”，用户可以在需要的业务逻辑中修改“title”的值。
+**pages/index/index.js：**此文件定义了index页面的业务逻辑，比如数据绑定，事件处理等。此处，变量"title"采用数据绑定的形式定义为字符串"World"，用户可以在需要的业务逻辑中修改"title"的值。
 
 ```javascript
+router  = require("@system.router")
+
 export default {
     data: {
-        title: 'World'
+        title: 'Hello ',
+        pageIndex: 0,
+    },
+    
+    onInit: function () {
+        print("==========onInit==========")
+    },
+
+    onReady: function () {
+        this.data.pageIndex = 20;
+        // this.data.user.age = 30;
+        print("==========onReady==========")
+        print(this.data)
+        print(this.data.pageIndex)
+    },
+
+    onShow: function () {
+        print("==========onShow==========")
+    },
+
+    onHide: function () {
+        print("==========onHide==========")
+    },
+    
+    onDestroy: function () {
+        print("==========onDestroy==========")
+    },
+
+    onPageRedirect: function (obj, x, y) {
+        print("==========onclick==========")
+        print(obj.attributes.url);
+        print(x);
+        print(y);
+        router.replace({
+            uri: obj.attributes.url
+        })
     }
 }
 ```
 
-**resources：**此目录用于存放系统级资源配置文件，如应用图标等。
+**注意事项：**
 
-**config.json：**此文件是配置文件，主要定义了页面路由和应用信息，可根据IDE工程和页面创建向导自动完成填充。
-
-```json
-{
-    "app": {
-        "bundleName": "com.huawei.helloworld",
-        "vendor": "huawei",
-        "version": {
-            "code": 1,
-            "name": "1"
-        },
-        "apiVersion": {
-            "compatible": 3,
-            "target": 4
-        }
-    },
-    "deviceConfig": {
-        "default": {}
-    },
-    "module": {
-        "deviceType": ["liteWearable"],
-        "distro": {
-            "deliveryWithInstall": true,
-            "moduleName": "entry",
-            "moduleType": "entry"
-        },
-        "abilities": [{
-            "name": "default",
-            "icon": "$media:icon",
-            "label": "helloworld",
-            "visible": true,
-            "type": "page"
-        }],
-        "js": [{
-            "pages": ["pages/index/index"],
-            "name": "default"
-        }]
-    }
-}
-```
+* JS中的`console.log`在这里只支持`print`
 
 # 运行应用
 
-请参考[使用预览器查看应用效果](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/previewer-0000001054328973)。
+**Linux**
+
+```shell
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/LiteWearable/
+```
+
+**Windows**
+
+```shell
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/LiteWearable/
+```
+

@@ -2,9 +2,9 @@
 
 ![logo](assets/evm-logo-text.svg)
 
-# EVM & HarmonyOS Development Courses
+# EVM & HarmonyOS Development Documents
 
-> EVM和鸿蒙OS开发课程
+> EVUE开发文档
 
 - 简单易上手
 - 类HTML/CSS/JavaScript语法，是的，全是你熟悉的编程语言

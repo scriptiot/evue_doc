@@ -4,6 +4,7 @@
 > 样式  
 > 方法  
 > 示例  
+> DEMO  
 
 列表包含一系列相同宽度的列表项。适合连续、多行呈现同类数据，例如图片和文本。
 
@@ -102,3 +103,110 @@ export default {
   text-align: center;
 }
 ```
+
+# DEMO
+
+构成一个页面的三个部分，`index.hml`,`index.css`,`index.js`。
+
+> 请注意默认还有一个[app.js](/zh-cn/js-file "app.js")文件。
+
+代码仓库地址：`http://gitlab.evmiot.com:12306/wzedmund/evm-jsfwk-littlevgl-qt/tree/dev/test/test-list`
+
+**index.hml**
+
+```html
+<div class="container">
+    <list class="todo-wraper" style="border-width: 1px;border-color: red;padding: 40px;margin: 50px;background-color: black;left: 30px;top: 30px;">
+        <list-item class="todo-item">
+            <text class="todo-title">000</text>
+            <text class="todo-title">456</text>
+        </list-item>
+        <list-item class="todo-item">
+            <text class="todo-title">123</text>
+            <text class="todo-title">456</text>
+        </list-item>
+        <list-item class="todo-item">
+            <text class="todo-title">123</text>
+            <text class="todo-title">456</text>
+        </list-item>
+        <list-item class="todo-item">
+            <text class="todo-title">123</text>
+            <text class="todo-title">456</text>
+        </list-item>
+        <list-item class="todo-item">
+            <div style="width: 200px;height: 50px;">
+                <text style="font-size: 20px;width: 100px;height: 20px;">123</text>
+                <text style="font-size: 20px;width: 100px;height: 20px;left: 100px;">456</text>
+            </div>
+        </list-item>
+    </list>
+</div>
+```
+
+**index.css**
+
+```css
+/* index.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    width: 454px;
+    height: 454px;
+}
+.todo-wraper {
+    width: 454px;
+    height: 300px;
+}
+.todo-item {
+    width: 454px;
+    height: 80px;
+    flex-direction: column;
+}
+.todo-title {
+    width: 454px;
+    height: 40px;
+    text-align: center;
+}
+```
+
+**index.js**
+
+```javascript
+// index.js
+export default {
+    data: {
+        todolist: [{
+            title: '刷leetcode',
+            date: '2020-06-25 10:00:00',
+        }, {
+            title: '看电影',
+            date: '2020-06-27 20:00:00',
+        }],
+    },
+}
+```
+
+## 执行命令
+
+下面可以在命令行输入以下命令，体验下DEMO，请根据自己实际的目录以及操作系统输入命令：
+
+**Linux**
+
+```shell
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-list/
+```
+
+**Windows**
+
+```powershell
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/list/
+```
+
+## 运行截图
+
+一切顺利的话，你将会看到如下页面：
+
+![](http://statics.evmiot.com/Peek-2020-10-31-21-34.gif)

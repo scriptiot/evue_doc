@@ -4,9 +4,7 @@
 2. 在index页面通过点击button按钮调用router.replace()函数跳转到详情页。
 3. 在detail页面通过点击button按钮调用router.replace()回到首页。
 
-创建detail页面，页面中包含一个\<text\>组件和\<button\>组件，\<text\>组件用来指明当前页面，\<button\>组件用来实现两个页面之间的相互跳转。pages/detail/detail.hml文件代码示例如下，detail.css文件内容和绘制样式章节中的[index.css](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-style-0000001055883166#ZH-CN_TOPIC_0000001055883166__zh-cn_topic_0000001050020757_section192248504211)一致：
-
-
+创建detail页面，页面中包含一个\<text\>组件和\<button\>组件，\<text\>组件用来指明当前页面，\<button\>组件用来实现两个页面之间的相互跳转。`pages/detail/detail.hml`文件代码示例如下，detail.css文件内容和绘制样式章节中的[index.css](https://developer.harmonyos.com/cn/docs/documentation/doc-references/lite-wearable-style-0000001055883166#ZH-CN_TOPIC_0000001055883166__zh-cn_topic_0000001050020757_section192248504211)一致：s
 
 ```html
 <!-- detail.hml -->

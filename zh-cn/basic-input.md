@@ -2,6 +2,7 @@
 > 属性  
 > 事件  
 > 样式  
+> DEMO
 
 交互式组件，包括单选框，多选框，按钮。
 
@@ -55,3 +56,115 @@
 | border-radius | \<length\> | - | 否 | border-radius属性是设置元素的外边框圆角半径。 |
 | background-color | \<color\> | - | 否 | 设置背景颜色。 |
 | [left\|top] | \<length\> | - | 否 | left|
+
+**注意事项：**
+
+* input组件目前不支持radio
+
+# DEMO
+
+构成一个页面的三个部分，`index.hml`,`index.css`,`index.js`。
+
+>  请注意默认还有一个[app.js](/zh-cn/js-file "app.js")文件。
+
+代码仓库地址：`http://gitlab.evmiot.com:12306/wzedmund/evm-jsfwk-littlevgl-qt/tree/dev/test/test-input`
+
+**index.hml**
+
+```html
+<div class="container">
+    <list id="list-container">
+        <!-- <list-item id="listitem">
+            <input type="button" style="left: 85px; width: 130px; height: 40px;border-width: 1px;border-color: red;" value="button 1" onclick="onclick" onlongpress="onlongpress" />
+        </list-item>
+        <list-item id="listitem">
+            <input type="radio" style="left: 85px; width: 300px; height: 60px;border-width: 1px;border-color: red;" checked="true" value="radio 2" onclick="backMain" />
+        </list-item>
+        <list-item id="listitem">
+            <input type="checkbox" style="left: 85px; width: 130px; height: 40px;border-width: 1px;border-color: red;" checked="true" value="checkbox 3" onclick="backMain" />
+        </list-item> -->
+        <list-item id="listitem">
+            <input type="button" style="left: 85px; width: 130px; height: 40px;border-width: 1px;border-color: red;" value="button 1" onclick="onclick" onlongpress="onlongpress"></input>
+        </list-item>
+        <list-item id="listitem">
+            <input type="radio" style="left: 85px; width: 300px; height: 60px;border-width: 1px;border-color: red;border-radius: 10px;" checked="true" value="radio 2" onclick="backMain"></input>
+        </list-item>
+        <list-item id="listitem">
+            <input type="checkbox" style="left: 85px; width: 130px; height: 40px;border-width: 1px;border-color: red;" checked="true" value="checkbox 3" onclick="backMain"></input>
+        </list-item>
+        <list-item id="listitem">
+            <input type="checkbox" style="left: 85px; width: 130px; height: 40px;border-width: 1px;border-color: red;display: none;" checked="true" value="checkbox 3" onclick="backMain"></input>
+        </list-item>
+    </list>
+</div>
+```
+
+**index.css**
+
+```css
+.container {
+    display: flex;
+    width: 454px;
+    height: 454px;
+    border-width: 2px;
+    border-radius: 2px;
+    margin: 0px;
+    padding: 0px;
+    background-color: green;
+}
+
+#list-container {
+    width: 300px;
+    height: 300px;
+    left: 70px;
+    top: 70px;
+    background-color: yellow;
+}
+
+#listitem {
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    margin: 0px;
+    padding: 10px;
+}
+```
+
+**index.js**
+
+```javascript
+export default {
+    data: {
+        title: 'World'
+    },
+    onclick: function() {
+        print("=====onclick=====");
+    },
+    onlongpress: function() {
+        print("=====longpress=====");
+    }
+}
+```
+
+## 执行命令
+
+下面可以在命令行输入以下命令，体验下DEMO，请根据自己实际的目录以及操作系统输入命令：
+
+**Linux**
+
+```shell
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-input/
+```
+
+**Windows**
+
+```powershell
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-input/
+```
+
+## 运行截图
+
+一切顺利的话，你将会看到如下页面：
+
+![](http://statics.evmiot.com/evue_20201031224002.jpg)

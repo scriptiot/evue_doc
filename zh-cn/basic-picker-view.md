@@ -76,5 +76,70 @@ type=time：
 | display                           | string     | flex        | 否   | 确定一个元素所产生的框的类型，可选值为：<br/>**flex：**弹性布局。<br/>**none：**不渲染此元素。 |
 | [left\|top]                       | \<length\> | 否          | 否   | left\|top需要配合position样式使用，来确定元素的偏移位置。<br/>left属性规定元素的左边缘。该属性定义了定位元素左外边距边界与其包含块左边界之间的偏移。<br/>top属性规定元素的顶部边缘。该属性定义了一个定位元素的上外边距边界与其包含块上边界之间的偏移。 |
 
+# DEMO
 
+构成一个页面的三个部分，`index.hml`,`index.css`,`index.js`。
+
+>  请注意默认还有一个[app.js](/zh-cn/js-file "app.js")文件。
+
+代码仓库地址：`http://gitlab.evmiot.com:12306/wzedmund/evm-jsfwk-littlevgl-qt/tree/dev/test/test-picker-view`
+
+**index.hml**
+
+```html
+<div class="container">
+    <picker-view type="text" selected="0" range="[ 'a', 'b', 'c', 'd']" style="left: 175px;top: 50px;width: 280px;height: 50px;margin-top: 10px;margin-left: 85px;background-color: red;"></picker-view>
+    <picker-view type="text" selected="1" range="[ '1', '2', '3', '4']" style="left: 175px;top: 110px;width: 280px;height: 50px;margin-top: 10px;margin-left: 85px;border-radius: 10px;"></picker-view>
+    <picker-view type="text" selected="2" range="[ 'a', 'b', 'c', 'd']" style="left: 175px;top: 170px;width: 280px;height: 50px;margin-top: 10px;margin-left: 85px;padding: 10px;"></picker-view>
+    <picker-view type="text" selected="3" range="[ 'a', 'b', 'c', 'd']" style="left: 175px;top: 230px;height: 50px;margin-top: 10px;margin-left: 85px;border-width: 3px;border-color: yellow;"></picker-view>
+    <!-- <picker-view type="time" selected="4" style="left: 175px; top: 290px; width:280px;height:50px;margin-top:10px;margin-left:85px;"></picker-view> -->
+</div>
+```
+
+**index.css**
+
+```css
+.container {
+    display: flex;
+    width: 454px;
+    height: 454px;
+    border-width: 2px;
+    border-radius: 2px;
+    margin: 0px;
+    padding: 0px;
+    background-color: green;
+}
+```
+
+**index.js**
+
+```javascript
+export default {
+    data: {
+        title: 'test-picker-view'
+    }
+}
+```
+
+## 执行命令
+
+下面可以在命令行输入以下命令，体验下DEMO，请根据自己实际的目录以及操作系统输入命令：
+
+**Linux**
+
+```shell
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-picker-view/
+```
+
+**Windows**
+
+```powershell
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-picker-view/
+```
+
+## 运行截图
+
+一切顺利的话，你将会看到如下页面：
+
+![](http://statics.evmiot.com/Peek-2020-10-31-22-58.gif)
 
