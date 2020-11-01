@@ -11,6 +11,6 @@
 
 [GitHub](https://github.com/scriptiot/evm)
 [Gitee](https://gitee.com/scriptiot/evm)
-[快速开始](zh-cn/evm_what)
+[快速开始](zh-cn/evue_what)
 
 ![color](#FFFFFF)

@@ -1,7 +1,7 @@
-* EVUE简介
+* EVUE 简介
 
-  * [EVUE是什么](zh-cn/evue_what.md)
-  * [EVUE快速体验](zh-cn/evm_architecture.md)
+  * [EVUE 是什么](zh-cn/evue_what.md)
+  * [EVUE 快速体验](zh-cn/evue_explore.md)
 
 * 框架说明
     * [文件组织](zh-cn/directory "文件组织")
