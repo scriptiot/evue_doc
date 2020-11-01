@@ -1,12 +1,15 @@
 一、EVUE简介
 ========================================
 
-+ GIthub 地址： https://github.com/scriptiot/evm
-+ Gitee  地址： https://gitee.com/scriptiot/evm
++ EVM GIthub 地址： https://github.com/scriptiot/evm
++ EVM Gitee  地址： https://gitee.com/scriptiot/evm
++ EVUE GIthub 地址： https://github.com/scriptiot/evue
++ EVUE Gitee  地址： https://gitee.com/scriptiot/evue
+
 
 ## 1.  EVUE是什么
 
- **`EVUE`** 全称 `Embedded Vue`，是一套面向物联网的小程序开发框架，类似VUE的开发方式，全面兼容鸿蒙HML语法，极速提升开发效率。
+ **`EVUE`** 全称 `Embedded Vue`，是基于[`EVM`](https://github.com/scriptiot/evm)构建的一套面向物联网小程序开发框架，类似VUE的开发方式，全面兼容鸿蒙HML语法，极速提升开发效率。
 
 ## 2. EVUE设计初衷
 
@@ -47,8 +50,32 @@
 - 全面兼容鸿蒙OS HML语法
 - PC模拟器支持，PC端开发，设备端运行
 
+## 4. 目录结构
 
-二、加入EVM
+| 文件      |    说明|
+| :-------- | --------:|
+| **bin**| 二进制目录 |
+| **bin/x86_64-linux-gnu/evue**| evue二进制程序 |
+| **bin/x86_64-window-mingw/evue.exe**| evue二进制程序堆栈信息配置 |
+| **frameworks**| js app框架 |
+| **include**|   evm头文件  |
+| **lib**|  静态库目录 |
+| **lib/x86_64-linux-gnu/libhml.a**|   linux下hml静态库 |
+| **lib/x86_64-window-mingw/libhml.a**|  windows下hml静态库|
+| **lvgl**| lvgl 7.6.1 版本源码|
+| **modules**| 库目录 |
+| **modules/ecma**| ecma标准库 |
+| **modules/hml**| 基于lvgl的hml封装 |
+| **src**| 工程源码目录 |
+| **test**| 测试代码目录 |
+
+
+二、基于EVUE的智能穿戴应用展示
+========================================
+
+
+
+三、加入EVM
 ========================================
 
 技术创造未来，**EVM**团队需要你的参与，**EVM**团队现面向社区招募有激情有梦想的社区开发者，共同开创物联网新生态；
