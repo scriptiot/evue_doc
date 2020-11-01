@@ -179,7 +179,7 @@ wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
 
 ```powershell
 PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
-evue.exe ../../test/test-input/
+evuesimulator.exe ../../test/test-input/
 ```
 
 ## 运行截图

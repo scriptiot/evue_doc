@@ -332,6 +332,6 @@ wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
 
 ```shell
 PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
-evue.exe ../../test/LiteWearable/
+evuesimulator.exe ../../test/LiteWearable/
 ```
 

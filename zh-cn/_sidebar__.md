@@ -38,6 +38,24 @@
         * [slider](zh-cn/basic-slider "slider")
         * [switch](zh-cn/basic-switch "switch")
         * [picker-view](zh-cn/basic-picker-view "picker-view")
+* 接口
+    * [通用规则](zh-cn/general-rules "通用规则")
+    * [通用错误码](zh-cn/error-codes "通用错误码")
+    * 基本功能
+        * [应用上下文](zh-cn/basic-features-context "应用上下文")
+        * [日志打印](zh-cn/basic-features-logs "日志打印")
+        * [页面路由](zh-cn/basic-features-routes "页面路由")
+        * [应用配置](zh-cn/basic-features-configuration "应用配置")
+    * 文件数据
+        * [数据存储](zh-cn/data-storage "数据存储")
+        * [文件存储](zh-cn/file-storage "文件存储")
+    * 系统能力
+        * [震动](zh-cn/system-vibration "震动")
+        * [传感器](zh-cn/system-sensor "传感器")
+        * [地理位置](zh-cn/system-location "地理位置")
+        * [设备信息](zh-cn/system-device-info "设备信息")
+        * [屏幕亮度](zh-cn/system-screen-brightness "屏幕亮度")
+        * [电量信息](zh-cn/system-battery "电量信息")
 * 组件通用说明
     * [通用事件](zh-cn/common-component-events "通用事件")
     * [通用属性](zh-cn/common-component-attributes "通用属性")

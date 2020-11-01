@@ -125,7 +125,7 @@ wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
 
 ```powershell
 PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
-evue.exe ../../test/list-item/
+evuesimulator.exe ../../test/list-item/
 ```
 
 ## 运行截图

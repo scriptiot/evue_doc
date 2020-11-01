@@ -50,6 +50,7 @@
 - 全面兼容鸿蒙OS HML语法
 - PC模拟器支持，PC端开发，设备端运行
 
+<<<<<<< Updated upstream
 ## 4. 目录结构
 
 | 文件      |    说明|
@@ -74,6 +75,40 @@
 ========================================
 
 
+=======
+## 4. 基于EVUE的手表应用展示
+* 启动页面
+
+![](http://statics.evmiot.com/evue_20201101232625.jpg)
+
+* 首页
+
+![](http://statics.evmiot.com/evue_20201101232508.jpg)
+
+* 电话
+
+![](http://statics.evmiot.com/evue_20201101232519.jpg)
+
+* 运动曲线
+
+![](http://statics.evmiot.com/evue_20201101232526.jpg)
+
+* 音乐应用
+
+![](http://statics.evmiot.com/evue_20201101232534.jpg)
+
+* 天气应用
+
+![](http://statics.evmiot.com/evue_20201101232541.jpg)
+
+* 运动记录
+
+![](http://statics.evmiot.com/evue_20201101232550.jpg)
+
+* 更新
+
+![](http://statics.evmiot.com/evue_20201101232604.jpg)
+>>>>>>> Stashed changes
 
 三、加入EVM
 ========================================
@@ -124,7 +159,7 @@ EVM处于创业高速成长期，欢迎有志之士加入，共同开辟物联�
 ![evm-gzh](./image/evm-gzh.jpg)
 
 
-## 5.联系我们
+## 5. 联系我们
 
 + 论坛： [EVM官方技术交流论坛](http://forum.evmiot.com/)
 + 邮箱： scriptiot@aliyun.com
