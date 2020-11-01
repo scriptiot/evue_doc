@@ -3,7 +3,7 @@
   - [EVM帮助手册-Github](https://scriptiot.github.io/evm_doc/#/zh-cn/evm_what)
   - [EVM帮助手册-Gitee](https://scriptiot.github.io/evm_doc/#/zh-cn/evm_what)
   - [EVUE帮助手册-Github](https://scriptiot.github.io/evue_doc/#/zh-cn/evue_what)
-  - [EVUE帮助手册-Gitee](https://scriptiot.github.io/evue_doc/#/zh-cn/evue_what)
+  - [EVUE帮助手册-Gitee](https://scriptiot.gitee.io/evue_doc/#/zh-cn/evue_what)
 - [**EVUE**模拟器](https://scriptiot.github.io/)
   - [Windows版本](https://scriptiot.github.io/evm_doc/#/zh-cn/evm_what)
   - [Linux版本](https://scriptiot.github.io/evm_doc/#/zh-cn/evm_what)
