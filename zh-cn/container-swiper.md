@@ -57,7 +57,9 @@
 **index.hml**
 
 ```html
-<swiper autoplay=true interval=1000 vertical=true duration=100 style="width: 350px;height: 350px;border-width: 1px;border-style: solid;border-color: black;left: 50px;top: 50px;margin: 50px;">
+<swiper autoplay=true interval=1000 vertical=true duration=100 style="
+    width: 350px;height: 350px;border-width: 1px;border-style: solid;
+    border-color: black;left: 50px;top: 50px;margin: 50px;">
     <div style="width: 350px;height: 350px;background-color: red;">
         <text>box 1</text>
     </div>
@@ -101,13 +103,15 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-swiper/
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
+./evue ../../test/test-swiper/
 ```
 
 **Windows**
 
 ```powershell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/swiper/
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
+evue.exe ../../test/swiper/
 ```
 
 ## 运行截图

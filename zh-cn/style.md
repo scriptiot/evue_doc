@@ -17,9 +17,16 @@
 
 ```html
 <!-- 设置div中的子组件为弹性布局，并且居中显示；保证text组件显示在屏幕中间。-->
-<div style="width: 454px; height: 454px; display: flex; justify-content: center; align-items: center;"> 
+<div style="width: 454px;
+            height: 454px;
+            display: flex;
+            justify-content: center;
+            align-items: center;"> 
 <!-- 设置text组件中文字居中显示；保证Hello World显示在屏幕最中间。-->
-<text style="width: 200px; height: 100px; font-size: 30px; text-align: center;"> 
+<text style="width: 200px;
+             height: 100px;
+             font-size: 30px;
+             text-align: center;"> 
 ```
 
 # 选择器样式
@@ -78,7 +85,8 @@
     <text id="title" style="font-size: {{fontSize}};">
         Hello {{title}}
     </text>
-    <input type="button" value="View Detail" style="width: 300px; height: 80px;" onclick="clickAction"></input>
+    <input type="button" value="View Detail"
+           style="width: 300px;height: 80px;" onclick="clickAction"></input>
 </div>
 ```
 
@@ -99,6 +107,6 @@ export default  {
 }
 ```
 
-界面开发完成后，请参考[使用预览器查看应用效果](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/previewer-0000001054328973)：
+<!-- 界面开发完成后，请参考[使用预览器查看应用效果](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/previewer-0000001054328973)：-->
 
-![](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20200922162411.12635253061720679126918538211765:50510922084431:2800:9BEAD3649B026B998F658E990B4E338DE8B4BE8239E3316AD74BFA1D802B455A.png?needInitFileName=true?needInitFileName=true)
+![](http://statics.evmiot.com/12635253061720679126918538211765.png)

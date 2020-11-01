@@ -117,13 +117,15 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-list-item/
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
+./evue ../../test/test-list-item/
 ```
 
 **Windows**
 
 ```powershell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/list-item/
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
+evue.exe ../../test/list-item/
 ```
 
 ## 运行截图

@@ -8,7 +8,9 @@
     <text id="title">
         Hello {{title}}
     </text>
-    <input type="button" value="View Detail" style="width: 300px; height: 80px;" onclick="clickAction"></input>
+    <input type="button" value="View Detail"
+           style="width: 300px; height: 80px;" onclick="clickAction">
+    </input>
 </div>
 ```
 

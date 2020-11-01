@@ -1,7 +1,8 @@
 > 子组件  
 > 属性  
 > 事件  
-> 样式
+> 样式  
+> DEMO
 
 进度条，用于显示内容加载或操作处理进度。
 
@@ -93,15 +94,31 @@
     <list class="list-container">
         <list-item class="listitem">
             <progress type="horizontal" percent="30"></progress>
-            <progress type="arc" percent="30" style="padding: 5px; width: 80px; height: 80px;stroke-width: 10px;"></progress>
+            <progress type="arc" percent="30" style="padding: 5px;
+                                                     width: 80px;
+                                                     height: 80px;
+                                                     stroke-width: 10px;
+                                                     ">
+            </progress>
         </list-item>
         <list-item class="listitem">
             <progress type="horizontal" percent="50"></progress>
-            <progress percent="50" style="padding: 5px; width: 80px; height: 80px;margin-top: 2px;color: red;"></progress>
+            <progress percent="50" style="padding: 5px; 
+                                          width: 80px;
+                                          height: 80px;
+                                          margin-top: 2px;
+                                          color: red;">
+            </progress>
         </list-item>
         <list-item class="listitem">
             <progress type="horizontal" percent="80"></progress>
-            <progress percent="80" style="padding: 5px; width: 80px; height: 80px;border-width: 1px;border-color: red;border-radius: 50%;"></progress>
+            <progress percent="80" style="padding: 5px;
+                                          width: 80px;
+                                          height: 80px;
+                                          border-width: 1px;
+                                          border-color: red;
+                                          border-radius: 50%;">
+            </progress>
         </list-item>
     </list>
 </div>
@@ -156,13 +173,15 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-progress/
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
+./evue ../../test/test-progress/
 ```
 
 **Windows**
 
 ```powershell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-progress/
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
+evue.exe ../../test/test-progress/
 ```
 
 ## 运行截图

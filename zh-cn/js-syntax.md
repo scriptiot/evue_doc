@@ -1,4 +1,4 @@
-> 语法 
+> 语法  
 > 对象  
 > 获取DOM元素  
 > 生命周期接口  
@@ -30,18 +30,21 @@ import utils from '../../common/utils.js';
 ```
 
 # 对象
-* 页面对象
+**页面对象**
+
 |  属性   | 类型  | 描述  |
 |  ----  | ----  | ----  |
 | data  | Object/Function | 页面的数据模型，类型是对象或者函数，如果类型是函数，返回值必须是对象。属性名不能以$或_开头，不要使用for, if, show, tid等保留字。 |
 | $refs  | Object | 持有注册过ref 属性的DOM元素或子组件实例的对象。 |
 
 # 获取DOM元素
-1. 通过$refs获取DOM元素
-```
+**通过$refs获取DOM元素**
+
+```html
 <!-- index.hml -->
 <div class="container">
-  <image-animator class="image-player" ref="animator" images="{{images}}" duration="1s" onclick="handleClick"></image-animator>
+  <image-animator class="image-player" ref="animator" images="{{images}}"
+  duration="1s" onclick="handleClick"></image-animator>
 </div>
 ```
 ```javascript

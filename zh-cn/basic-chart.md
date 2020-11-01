@@ -137,9 +137,22 @@
 **index.hml**
 
 ```html
-<div style="background-color:white;text-align:center;width:454px; height:454px; border-width:0px;">
-    <text style="left:110px; top:70px; width: 200px; height: 60px; text-align: center; font-size: 30px; font-family:simsun;"> 图表 </text>
-    <chart style="left:72px; top:130px; width:300px; height: 250px"></chart>
+<div style="background-color: white;
+            text-align: center;
+            width: 454px;
+            height: 454px;
+            border-width: 0px;">
+    <text style="left: 110px;
+                 top:70px;
+                 width: 200px;
+                 height: 60px;
+                 text-align: center;
+                 font-size: 30px;
+                 font-family:simsun;"> 图表 </text>
+    <chart style="left: 72px;
+                  top:130px;
+                  width:300px;
+                  height: 250px"></chart>
 </div>
 ```
 
@@ -171,13 +184,15 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-chart/
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
+./evue ../../test/test-chart/
 ```
 
 **Windows**
 
 ```powershell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-chart/
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
+evue.exe ../../test/test-chart/
 ```
 
 ## 运行截图

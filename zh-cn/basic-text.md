@@ -2,6 +2,7 @@
 > 属性  
 > 事件  
 > 样式  
+> DEMO
 
 文本，用于呈现一段信息。
 
@@ -55,15 +56,82 @@
 **index.hml**
 
 ```html
-<div style="left: 0px;top: 0px;width: 455px;height: 455px;border-width: 1px;border-style: solid;border-color: white;margin: 50px;background-color: black;">
-    <text style="left: 70px;top: 70px;width: 100px;height: 30px;font-size: 20px;color: white;border-width: 1px;border-style: solid;border-color: white;">text</text>
-    <text style="left: 70px;top: 110px;width: 150px;height: 30px;font-size: 20px;color: white;border-width: 1px;border-style: solid;border-color: white;letter-spacing: 5px;">letter space</text>
-    <text style="left: 70px;top: 150px;width: 150px;height: 30px;font-size: 20px;color: white;border-width: 1px;border-style: solid;border-color: white;text-align: center;">text align</text>
-    <text style="left: 70px;top: 190px;width: 150px;height: 30px;font-size: 20px;color: white;border-width: 1px;border-style: solid;border-color: white;text-overflow: clip;">text overflow hello world</text>
-    <text style="left: 70px;top: 230px;width: 100px;height: 30px;font-size: 20px;color: white;border-width: 1px;border-style: solid;border-color: white;text-decoration: underline;">text decoration</text>
-    <text style="left: 70px;top: 270px;width: 100px;height: 30px;font-size: 20px;color: white;border-width: 1px;border-style: solid;border-color: white;line-height: 20px;">line height</text>
-    <text style="left: 70px;top: 310px;font-size: 20px;color: white;">display none</text>
-    <text style="left: 70px;top: 330px;background-color: red;opacity: 0.5;">opacity</text>
+<div style="left: 0px;
+            top: 0px;
+            width: 455px;
+            height: 455px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: white;
+            margin: 50px;
+            background-color: black;">
+    <text style="left: 70px;
+                 top: 70px;
+                 width: 100px;
+                 height: 30px;
+                 font-size: 20px;
+                 color: white;
+                 border-width: 1px;
+                 border-style: solid;
+                 border-color: white;">text</text>
+    <text style="left: 70px;
+                 top: 110px;
+                 width: 150px;
+                 height: 30px;
+                 font-size: 20px;
+                 color: white;
+                 border-width: 1px;
+                 border-style: solid;
+                 border-color: white;
+                 letter-spacing: 5px;">letter space</text>
+    <text style="left: 70px;
+                 top: 150px;
+                 width: 150px;
+                 height: 30px;
+                 font-size: 20px;
+                 color: white;
+                 border-width: 1px;
+                 border-style: solid;
+                 border-color: white;
+                 text-align: center;">text align</text>
+    <text style="left: 70px;
+                 top: 190px;
+                 width: 150px;
+                 height: 30px;
+                 font-size: 20px;
+                 color: white;
+                 border-width: 1px;
+                 border-style: solid;
+                 border-color: white;
+                 text-overflow: clip;">text overflow hello world</text>
+    <text style="left: 70px;
+                 top: 230px;
+                 width: 100px;
+                 height: 30px;
+                 font-size: 20px;
+                 color: white;
+                 border-width: 1px;
+                 border-style: solid;
+                 border-color: white;
+                 text-decoration: underline;">text decoration</text>
+    <text style="left: 70px;
+                 top: 270px;
+                 width: 100px;
+                 height: 30px;
+                 font-size: 20px;
+                 color: white;
+                 border-width: 1px;
+                 border-style: solid;
+                 border-color: white;
+                 line-height: 20px;">line height</text>
+    <text style="left: 70px;
+                 top: 310px;
+                 font-size: 20px;
+                 color: white;">display none</text>
+    <text style="left: 70px;
+                 top: 330px;
+                 background-color: red;
+                 opacity: 0.5;">opacity</text>
 </div>
 ```
 
@@ -95,13 +163,15 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-text/
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
+./evue ../../test/test-text/
 ```
 
 **Windows**
 
 ```powershell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-text/
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
+evue.exe ../../test/test-text/
 ```
 
 ## 运行截图

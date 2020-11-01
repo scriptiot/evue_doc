@@ -1,7 +1,5 @@
->  导入模块
->
-> app.getInfo()
->
+>  导入模块  
+> app.getInfo()  
 > app.terminate()
 
 # 导入模块

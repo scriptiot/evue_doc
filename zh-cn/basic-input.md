@@ -74,26 +74,43 @@
 ```html
 <div class="container">
     <list id="list-container">
-        <!-- <list-item id="listitem">
-            <input type="button" style="left: 85px; width: 130px; height: 40px;border-width: 1px;border-color: red;" value="button 1" onclick="onclick" onlongpress="onlongpress" />
+        <list-item id="listitem">
+            <input type="button" style="left: 85px;
+                                        width: 130px;
+                                        height: 40px;
+                                        border-width: 1px;
+                                        border-color: red;"
+             value="button 1" onclick="onclick" onlongpress="onlongpress">
+            </input>
         </list-item>
         <list-item id="listitem">
-            <input type="radio" style="left: 85px; width: 300px; height: 60px;border-width: 1px;border-color: red;" checked="true" value="radio 2" onclick="backMain" />
+            <input type="radio" style="left: 85px;
+                                       width: 300px;
+                                       height: 60px;
+                                       border-width: 1px;
+                                       border-color: red;
+                                       border-radius: 10px;"
+                   checked="true" value="radio 2" onclick="backMain">
+            </input>
         </list-item>
         <list-item id="listitem">
-            <input type="checkbox" style="left: 85px; width: 130px; height: 40px;border-width: 1px;border-color: red;" checked="true" value="checkbox 3" onclick="backMain" />
-        </list-item> -->
-        <list-item id="listitem">
-            <input type="button" style="left: 85px; width: 130px; height: 40px;border-width: 1px;border-color: red;" value="button 1" onclick="onclick" onlongpress="onlongpress"></input>
+            <input type="checkbox" style="left: 85px;
+                                          width: 130px;
+                                          height: 40px;
+                                          border-width: 1px;
+                                          border-color: red;"
+                   checked="true" value="checkbox 3" onclick="backMain">
+            </input>
         </list-item>
         <list-item id="listitem">
-            <input type="radio" style="left: 85px; width: 300px; height: 60px;border-width: 1px;border-color: red;border-radius: 10px;" checked="true" value="radio 2" onclick="backMain"></input>
-        </list-item>
-        <list-item id="listitem">
-            <input type="checkbox" style="left: 85px; width: 130px; height: 40px;border-width: 1px;border-color: red;" checked="true" value="checkbox 3" onclick="backMain"></input>
-        </list-item>
-        <list-item id="listitem">
-            <input type="checkbox" style="left: 85px; width: 130px; height: 40px;border-width: 1px;border-color: red;display: none;" checked="true" value="checkbox 3" onclick="backMain"></input>
+            <input type="checkbox" style="left: 85px;
+                                          width: 130px;
+                                          height: 40px;
+                                          border-width: 1px;
+                                          border-color: red;
+                                          display: none;"
+                   checked="true" value="checkbox 3" onclick="backMain">
+            </input>
         </list-item>
     </list>
 </div>
@@ -154,13 +171,15 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-input/
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
+./evue ../../test/test-input/
 ```
 
 **Windows**
 
 ```powershell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-input/
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
+evue.exe ../../test/test-input/
 ```
 
 ## 运行截图

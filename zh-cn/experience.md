@@ -113,56 +113,83 @@ LiteWearable工程目录如下图所示：
 
 ```html
 <div class="container">
-    <text style="top: 30px;color: white;width: 454px;height: 35px;text-align: center;font-family: simsun;font-size: 30px;">菜单</text>
+    <text style="top: 30px;
+                 color: white;
+                 width: 454px;
+                 height: 35px;
+                 text-align: center;
+                 font-family: simsun;
+                 font-size: 30px;">菜单</text>
     <list class="list-container">
-        <list-item class="list-item" url="pages/index/index" onclick="onPageRedirect">
-            <image src="./common/images/dribbble.bin" class="app-icon"></image>
+        <list-item class="list-item" url="pages/index/index"
+                   onclick="onPageRedirect">
+            <image src="./common/images/dribbble.bin"
+                   class="app-icon"></image>
             <text class="maintitle">首页</text>
             <!-- <text class="subtitle">100.42</text>
             <text class="maintitle-note">公里</text> -->
-            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+            <image src="./common/images/appbar.chevron.right.bin"
+                   class="arrow-icon"></image>
         </list-item>
-        <list-item class="list-item" url="pages/call/index" onclick="onPageRedirect">
-            <image src="./common/images/evernote.bin" class="app-icon"></image>
+        <list-item class="list-item" url="pages/call/index"
+                   onclick="onPageRedirect">
+            <image src="./common/images/evernote.bin"
+                   class="app-icon"></image>
             <text class="maintitle">电话</text>
             <!-- <text class="subtitle">07:23:39</text> -->
             <!-- <text class="maintitle-note">公里</text> -->
-            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+            <image src="./common/images/appbar.chevron.right.bin"
+                   class="arrow-icon"></image>
         </list-item>
-        <list-item class="list-item" url="pages/chart/index" onclick="onPageRedirect">
-            <image src="./common/images/flipboard.bin" class="app-icon"></image>
+        <list-item class="list-item" url="pages/chart/index"
+                   onclick="onPageRedirect">
+            <image src="./common/images/flipboard.bin"
+                   class="app-icon"></image>
             <text class="maintitle">健身曲线</text>
             <!-- <text class="subtitle">2755</text>
             <text class="maintitle-note">千卡</text> -->
-            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+            <image src="./common/images/appbar.chevron.right.bin"
+                   class="arrow-icon"></image>
         </list-item>
-        <list-item class="list-item" url="pages/music/index" onclick="onPageRedirect">
-            <image src="./common/images/pocket.bin" class="app-icon"></image>
+        <list-item class="list-item" url="pages/music/index"
+                   onclick="onPageRedirect">
+            <image src="./common/images/pocket.bin"
+                   class="app-icon"></image>
             <text class="maintitle">音乐</text>
             <!-- <text class="subtitle">100.42</text>
             <text class="maintitle-note">公里</text> -->
-            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+            <image src="./common/images/appbar.chevron.right.bin"
+                   class="arrow-icon"></image>
         </list-item>
-        <list-item class="list-item" url="pages/weather/index" onclick="onPageRedirect">
-            <image src="./common/images/rss.bin" class="app-icon"></image>
+        <list-item class="list-item" url="pages/weather/index"
+                   onclick="onPageRedirect">
+            <image src="./common/images/rss.bin"
+                   class="app-icon"></image>
             <text class="maintitle">天气</text>
             <!-- <text class="subtitle">07:23:39</text> -->
             <!-- <text class="maintitle-note">公里</text> -->
-            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+            <image src="./common/images/appbar.chevron.right.bin"
+                   class="arrow-icon"></image>
         </list-item>
-        <list-item class="list-item" url="pages/list/index" onclick="onPageRedirect">
-            <image src="./common/images/twitter.bin" class="app-icon"></image>
+        <list-item class="list-item" url="pages/list/index"
+                   onclick="onPageRedirect">
+            <image src="./common/images/twitter.bin"
+                   class="app-icon"></image>
             <text class="maintitle">跑步记录</text>
             <!-- <text class="subtitle">2755</text>
             <text class="maintitle-note">千卡</text> -->
-            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+            <image src="./common/images/appbar.chevron.right.bin"
+                   class="arrow-icon"></image>
         </list-item>
-        <list-item class="list-item" url="pages/ring/index" onclick="onPageRedirect">
-            <image src="./common/images/whatsapp.bin" class="app-icon"></image>
+        <list-item class="list-item" url="pages/ring/index"
+                   onclick="onPageRedirect">
+            <image src="./common/images/whatsapp.bin"
+                   class="app-icon"></image>
             <text class="maintitle">更新升级</text>
             <!-- <text class="subtitle">2755</text>
             <text class="maintitle-note">千卡</text> -->
-            <image src="./common/images/appbar.chevron.right.bin" class="arrow-icon"></image>
+            <image src="./common/images/appbar.chevron.right.bin"
+                   class="arrow-icon">d</image>
         </list-item>
     </list>
 </div>
@@ -297,12 +324,14 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/LiteWearable/
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
+./evue ../../test/LiteWearable/
 ```
 
 **Windows**
 
 ```shell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/LiteWearable/
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
+evue.exe ../../test/LiteWearable/
 ```
 

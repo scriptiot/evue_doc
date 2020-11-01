@@ -19,7 +19,9 @@
     <text  id="title">
         Hello {{title}}
     </text>
-    <input type="button" value="View Detail" style="width: 300px; height: 50px;" onclick="clickAction"></input>
+    <input type="button" value="View Detail"
+           style="width: 300px; height: 50px;" onclick="clickAction">
+    </input>
 </div>
 ```
 

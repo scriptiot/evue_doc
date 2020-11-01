@@ -12,7 +12,9 @@
     <text id="title">
         Detail Page
     </text>
-    <input type="button" value="Back" style="width: 300px; height: 80px;" onclick="clickAction"></input>
+    <input type="button" value="Back"
+           style="width: 300px; height: 80px;" onclick="clickAction">
+    </input>
 </div>
 ```
 
@@ -49,6 +51,6 @@ export default {
 }
 ```
 
-界面开发完成后，请参考[使用预览器查看应用效果](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/previewer-0000001054328973)：
+<!-- 界面开发完成后，请参考[使用预览器查看应用效果](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/previewer-0000001054328973)：-->
 
-![](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20200922162411.35858181549913493406071108190330:50510922084432:2800:46481456CB4091ECE503D5CBF12A9631EB928C3DD2D5575D6750C8B4C51C3374.png?needInitFileName=true?needInitFileName=true)
+![](http://statics.evmiot.com/35858181549913493406071108190330.png)

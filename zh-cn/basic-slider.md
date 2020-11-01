@@ -2,6 +2,7 @@
 > 属性  
 > 事件  
 > 样式  
+> DEMO
 
 滑动条组件，用来快速调节设置值，如音量、亮度等。
 
@@ -62,13 +63,22 @@
 <div class="container">
     <list class="list-container">
         <list-item class="listitem">
-            <slider min="0" max="100" value="25" style="padding: 1px;margin-top: 20px;border-width: 1px;border-color: red;"></slider>
+            <slider min="0" max="100" value="25"
+                    style="padding: 1px;
+                           margin-top: 20px;
+                           border-width: 1px;
+                           border-color: red;">
+            </slider>
         </list-item>
         <list-item class="listitem">
-            <slider min="0" max="100" value="50" style="width: 150px;height: 30px;"></slider>
+            <slider min="0" max="100" value="50"
+                    style="width: 150px;height: 30px;">
+            </slider>
         </list-item>
         <list-item class="listitem">
-            <slider min="0" max="100" value="75" style="background-color: red;"></slider>
+            <slider min="0" max="100" value="75"
+                    style="background-color: red;">
+            </slider>
         </list-item>
         <list-item class="listitem">
             <slider min="0" max="100" value="100"></slider>
@@ -126,13 +136,15 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-slider/
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
+./evue ../../test/test-slider/
 ```
 
 **Windows**
 
 ```powershell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-slider/
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
+evue.exe ../../test/test-slider/
 ```
 
 ## 运行截图

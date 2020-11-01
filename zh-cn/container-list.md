@@ -116,7 +116,8 @@ export default {
 
 ```html
 <div class="container">
-    <list class="todo-wraper" style="border-width: 1px;border-color: red;padding: 40px;margin: 50px;background-color: black;left: 30px;top: 30px;">
+    <list class="todo-wraper" style="border-width: 1px;border-color: red;
+        padding: 40px;margin: 50px;background-color: black;left: 30px;top: 30px;">
         <list-item class="todo-item">
             <text class="todo-title">000</text>
             <text class="todo-title">456</text>
@@ -136,7 +137,8 @@ export default {
         <list-item class="todo-item">
             <div style="width: 200px;height: 50px;">
                 <text style="font-size: 20px;width: 100px;height: 20px;">123</text>
-                <text style="font-size: 20px;width: 100px;height: 20px;left: 100px;">456</text>
+                <text style="font-size: 20px;width: 100px;height: 20px;
+                left: 100px;">456</text>
             </div>
         </list-item>
     </list>
@@ -196,13 +198,15 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-list/
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
+./evue ../../test/test-list/
 ```
 
 **Windows**
 
 ```powershell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/list/
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
+evue.exe ../../test/list/
 ```
 
 ## 运行截图

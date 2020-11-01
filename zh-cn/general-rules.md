@@ -1,7 +1,5 @@
-> 同步
->
-> 异步
->
+> 同步  
+> 异步  
 > 订阅
 
 # 同步
@@ -60,8 +58,8 @@ console.log(JSON.stringify(info));
         <td>在执行完成时触发。</td>
     </tr>
 </table>
-> **说明：**
->
+
+> **说明：**  
 > * success、fail、cancel和complete四个回调函数是否支持参考具体接口描述
 > * success、fail和cancel三个回调函数的触发是互斥的，即会且只会在一个回调函数中触发，触发任意一个都会再次调用complete回调。
 

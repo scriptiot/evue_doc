@@ -42,6 +42,6 @@
 }
 ```
 
-![picture](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20200930144419.12562769090068034679161790658283:50510930071315:2800:24C94BA6793BA636D81432870BAA8AA9E5E9732400593733190F2A6DAF7907D2.gif?needInitFileName=true?needInitFileName=true)
+![picture](http://statics.evmiot.com/12562769090068034679161790658283.gif)
 
 > 说明：@keyframes的from/to不支持动态绑定。

@@ -1,7 +1,8 @@
 > 子组件  
 > 属性  
 > 事件  
-> 样式
+> 样式  
+> DEMO
 
 开关选择器，通过开关，开启或关闭某个功能。
 
@@ -57,16 +58,24 @@
 <div class="container">
     <list class="list-container">
         <list-item class="listitem">
-            <switch checked="false" style="width: 150px;height: 30px;"></switch>
+            <switch checked="false" style="width: 150px;height: 30px;">
+            </switch>
         </list-item>
         <list-item class="listitem">
-            <switch checked="true" style="width: 50px;padding: 5px;margin-top: 20px;"></switch>
+            <switch checked="true" style="width: 50px;
+                                          padding: 5px;
+                                          margin-top: 20px;">
+            </switch>
         </list-item>
         <list-item class="listitem">
-            <switch checked="true" style="border-width:1px; border-color: red;border-radius: 10px;"></switch>
+            <switch checked="true" style="border-width: 1px;
+                                          border-color: red;
+                                          border-radius: 10px;">
+            </switch>
         </list-item>
         <list-item class="listitem">
-            <switch checked="true" style="background-color: red;"></switch>
+            <switch checked="true" style="background-color: red;">
+            </switch>
         </list-item>
     </list>
 </div>
@@ -121,13 +130,15 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-switch/
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
+./evue ../../test/test-switch/
 ```
 
 **Windows**
 
 ```powershell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-switch/
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
+evue.exe ../../test/test-switch/
 ```
 
 ## 运行截图

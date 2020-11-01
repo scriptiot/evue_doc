@@ -3,14 +3,14 @@
 > 获取语言  
 
 基于开发框架的应用会覆盖多个国家和地区，开发框架支持多语言能力后，可以让应用开发者无需开发多个不同语言的版本，就可以同时支持多种语言的切换，为项目维护带来便利。
-  
+
 开发者仅需要通过定义资源文件和引用资源两个步骤，就可以使用开发框架的多语言能力；如果需要在应用中获取当前系统语言，请参考获取语言。
 
 # 定义资源文件
 资源文件用于存放应用在多种语言场景下的资源内容，开发框架使用JSON文件保存资源定义。
-  
+
 在文件组织中指定的i18n文件夹内放置每个语言地区下的资源定义文件即可，资源文件命名为“语言-地区.json”格式，例如英文（美国）的资源文件命名为en-US.json。当开发框架无法在应用中找到系统语言的资源文件时，默认使用en-US.json中的资源内容。
-  
+
 以en-US.json和ar-AE.json为例，资源文件内容格式如下：
 ```json
 {
@@ -48,9 +48,11 @@
   <text>{{ $t('strings.array', ['Hello world']) }}</text>
   <!-- 先在js中获取资源内容，再在text中显示“Hello world” -->
   <text>{{ hello }}</text>
-  <!-- 先在js中获取资源内容，并将占位符{name}替换为“Hello world”，再在text中显示“Object parameter substitution-Hello world” -->
+  <!-- 先在js中获取资源内容，并将占位符{name}替换为“Hello world”，
+  再在text中显示“Object parameter substitution-Hello world” -->
   <text>{{ replaceObject }}</text>
-  <!-- 先在js中获取资源内容，并将占位符{0}替换为“Hello world”，再在text中显示“Array type parameter substitution-Hello world” -->
+  <!-- 先在js中获取资源内容，并将占位符{0}替换为“Hello world”，
+  再在text中显示“Array type parameter substitution-Hello world” -->
   <text>{{ replaceArray }}</text>
  
   <!-- 获取图片路径 -->

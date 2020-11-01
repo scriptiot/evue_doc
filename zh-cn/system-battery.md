@@ -36,7 +36,8 @@ battery.getStatus({
     console.log('success get battery level:' + data.level);
   },
   fail: function(data, code) {
-    console.log('fail to get battery level code:' + code + ', data: ' + data);
+    console.log('fail to get battery level code:' 
+                + code + ', data: ' + data);
   },
 });
 ```

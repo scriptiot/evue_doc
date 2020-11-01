@@ -1,12 +1,9 @@
-> 概述
->
-> 子组件
->
-> 属性
->
-> 事件
->
-> 样式
+> 概述  
+> 子组件  
+> 属性  
+> 事件  
+> 样式  
+> DEMO
 
 # 概述
 
@@ -88,11 +85,42 @@ type=time：
 
 ```html
 <div class="container">
-    <picker-view type="text" selected="0" range="[ 'a', 'b', 'c', 'd']" style="left: 175px;top: 50px;width: 280px;height: 50px;margin-top: 10px;margin-left: 85px;background-color: red;"></picker-view>
-    <picker-view type="text" selected="1" range="[ '1', '2', '3', '4']" style="left: 175px;top: 110px;width: 280px;height: 50px;margin-top: 10px;margin-left: 85px;border-radius: 10px;"></picker-view>
-    <picker-view type="text" selected="2" range="[ 'a', 'b', 'c', 'd']" style="left: 175px;top: 170px;width: 280px;height: 50px;margin-top: 10px;margin-left: 85px;padding: 10px;"></picker-view>
-    <picker-view type="text" selected="3" range="[ 'a', 'b', 'c', 'd']" style="left: 175px;top: 230px;height: 50px;margin-top: 10px;margin-left: 85px;border-width: 3px;border-color: yellow;"></picker-view>
-    <!-- <picker-view type="time" selected="4" style="left: 175px; top: 290px; width:280px;height:50px;margin-top:10px;margin-left:85px;"></picker-view> -->
+    <picker-view type="text" selected="0" range="[ 'a', 'b', 'c', 'd']"
+                 style="left: 175px;
+                        top: 50px;
+                        width: 280px;
+                        height: 50px;
+                        margin-top: 10px;
+                        margin-left: 85px;
+                        background-color: red;">
+    </picker-view>
+    <picker-view type="text" selected="1" range="[ '1', '2', '3', '4']"
+                 style="left: 175px;
+                        top: 110px;
+                        width: 280px;
+                        height: 50px;
+                        margin-top: 10px;
+                        margin-left: 85px;
+                        border-radius: 10px;">
+    </picker-view>
+    <picker-view type="text" selected="2" range="[ 'a', 'b', 'c', 'd']"
+                 style="left: 175px;
+                        top: 170px;
+                        width: 280px;
+                        height: 50px;
+                        margin-top: 10px;
+                        margin-left: 85px;
+                        padding: 10px;">
+    </picker-view>
+    <picker-view type="text" selected="3" range="[ 'a', 'b', 'c', 'd']"
+                 style="left: 175px;
+                        top: 230px;
+                        height: 50px;
+                        margin-top: 10px;
+                        margin-left: 85px;
+                        border-width: 3px;
+                        border-color: yellow;">
+    </picker-view>
 </div>
 ```
 
@@ -128,13 +156,15 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-picker-view/
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
+./evue ../../test/test-picker-view/
 ```
 
 **Windows**
 
 ```powershell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-picker-view/
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
+evue.exe ../../test/test-picker-view/
 ```
 
 ## 运行截图

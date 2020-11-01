@@ -42,7 +42,8 @@ brightness.getValue({
     console.log('success get brightness value:' + data.value);
   },
   fail: function(data, code) {
-    console.log('get brightness fail, code: ' + code + ', data: ' + data);
+    console.log('get brightness fail, code: ' 
+                + code + ', data: ' + data);
   },
 });
 ```
@@ -69,7 +70,8 @@ brightness.setValue({
     console.log('handling set brightness success.'); 
   },
   fail: function(data, code){
-    console.log('handling set brightness value fail, code:' + code + ', data: ' + data);
+    console.log('handling set brightness value fail, code:' 
+                + code + ', data: ' + data);
   },
 });
 ```
@@ -100,7 +102,8 @@ brightness.getMode({
     console.log('success get mode:' + data.mode);
   },
   fail: function(data, code){
-    console.log('handling get mode fail, code:' + code + ', data: ' + data);
+    console.log('handling get mode fail, code:' 
+                + code + ', data: ' + data);
   },
 });
 ```
@@ -127,7 +130,8 @@ brightness.setMode({
     console.log('handling set mode success.'); 
   },
   fail: function(data, code){
-    console.log('handling set mode fail, code:' + code + ', data: ' + data);
+    console.log('handling set mode fail, code:' 
+                + code + ', data: ' + data);
   },
 });
 ```
@@ -156,7 +160,8 @@ brightness.setKeepScreenOn({
     console.log('handling set keep screen on success.')
   },
   fail: function (data, code) {
-    console.log('handling set keep screen on fail, code:' + code + ', data: ' + data);
+    console.log('handling set keep screen on fail, code:' 
+                + code + ', data: ' + data);
   },
 });
 ```

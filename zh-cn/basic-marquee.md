@@ -55,17 +55,39 @@
 <div class="container">
     <list class="list-container">
         <list-item class="listitem">
-            <marquee scrollamount="3" style="width: 120px; height: 50px; margin-top: 10px; color: red; border-width: 1px; border-color: red; border-radius: 5px; font-size: 38px; font-family: HYQiHei-65S; ">
+            <marquee scrollamount="3" style="width: 120px;
+                                             height: 50px;
+                                             margin-top: 10px;
+                                             color: red;
+                                             border-width: 1px;
+                                             border-color: red;
+                                             border-radius: 5px;
+                                             font-size: 38px;
+                                             font-family: HYQiHei-65S;">
                 show-abcedfghijklmn
             </marquee>
         </list-item>
         <list-item class="listitem">
-            <marquee scrollamount="30" style="border-width: 1px; border-color: red; padding: 5px; margin-top: 10px; color: red; font-size: 38px; font-family: HYQiHei-65S; ">
+            <marquee scrollamount="30" style="border-width: 1px;
+                                              border-color: red;
+                                              padding: 5px;
+                                              margin-top: 10px;
+                                              color: red;
+                                              font-size: 38px;
+                                              font-family: HYQiHei-65S;">
                 show-abcedfghijklmn
             </marquee>
         </list-item>
         <list-item class="listitem">
-            <marquee scrollamount="300" style="border-width: 1px; border-color: red; padding: 5px; width: 100px; height: 50px; margin-top: 10px; color: red; font-size: 38px; font-family: HYQiHei-65S; ">
+            <marquee scrollamount="300" style="border-width: 1px;
+                                               border-color: red;
+                                               padding: 5px;
+                                               width: 100px;
+                                               height: 50px;
+                                               margin-top: 10px;
+                                               color: red;
+                                               font-size: 38px;
+                                               font-family: HYQiHei-65S;">
                 show-abcedfghijklmn
             </marquee>
         </list-item>
@@ -110,7 +132,7 @@
 ```javascript
 export default {
     data: {
-        title: 'show-abcedfghijklmn'
+        title: 'show-marquee'
     }
 }
 ```
@@ -122,13 +144,15 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$ ./evue ../../test/test-marquee/
+wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
+./evue ../../test/test-marquee/
 ```
 
 **Windows**
 
 ```powershell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>evue.exe ../../test/test-marquee/
+PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
+evue.exe ../../test/test-marquee/
 ```
 
 ## 运行截图

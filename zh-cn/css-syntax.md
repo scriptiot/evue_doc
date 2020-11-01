@@ -13,21 +13,24 @@ CSS是描述HML页面结构的样式语言。所有组件均存在系统默认�
 每个页面目录下存在一个与布局hml文件同名的css文件，用来描述该hml页面中组件的样式，决定组件应该如何显示。
 
 1. 内部样式，支持使用style、class属性来控制组件的样式。例如：
-```
+
+```html
 <!-- index.hml -->
 <div class="container">
   <text style="color:red">Hello World</text>
 </div>
 ```
+
 ```css
 /* index.css */
 .container {
   justify-content: center;
 }
-
 ```
 
+
 2. 文件导入，合并外部样式文件。例如，在common目录中定义样式文件style.css，并在index.css中进行导入：
+
 ```css
 /* style.css */
 .title {
@@ -44,6 +47,7 @@ CSS是描述HML页面结构的样式语言。所有组件均存在系统默认�
 
 # 选择器
 css选择器用于选择需要添加样式的元素，支持的选择器如下表所示：
+
 |  选择器   | 样例  | 样例描述  |
 |  ----  | ----  | ----  |
 | .class  | .container | 用于选择class="container"的组件。 |
@@ -84,6 +88,7 @@ div {
 
 # 伪类
 css伪类是选择器中的关键字，用于指定要选择元素的特殊状态。
+
 |  名称   | 支持组件  | 描述  |
 |  ----  | ----  | ----  |
 | :active  | input[type="button"] | 表示被用户激活的元素，如：被用户按下的按钮。轻量级智能穿戴上伪类选择器上仅支持background-color 和background-image 的样式设置。 |
@@ -130,5 +135,5 @@ $colorBackground: #000000;
 }
 ```
 
-> 说明：  
+> 说明：   
 > + 引用的预编译文件建议放在common目录进行管理。
