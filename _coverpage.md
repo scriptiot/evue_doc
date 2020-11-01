@@ -1,15 +1,16 @@
-<!-- _coverpage.md -->
+<p style="text-align: center">
+ <img src="zh-cn/image/logo_text.svg"/>
+</p>
 
-![logo](assets/evm-logo-text.svg)
+> **`EVUE`** 开发文档
 
-# EVM & HarmonyOS Development Documents
+- **物联网小程序开发**
+- **类VUE应用框架**
+- **轻量级智能穿戴应用开发**
+- **全面兼容鸿蒙OS HML语法**
 
-> EVUE开发文档
+[GitHub](https://github.com/scriptiot/evm)
+[Gitee](https://gitee.com/scriptiot/evm)
+[快速开始](zh-cn/evm_what)
 
-- 简单易上手
-- 类HTML/CSS/JavaScript语法，是的，全是你熟悉的编程语言
-- 众多应用案例
-
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](/zh-cn/)
-
+![color](#FFFFFF)

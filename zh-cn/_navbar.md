@@ -1,7 +1,8 @@
-<!-- zh-cn/_navbar.md -->
-
-* [首页](/)
-
-* 教程
-  * [轻量级智能穿戴开发](/zh-cn/)
-
+- [主页](https://scriptiot.github.io/)
+- [帮助手册](https://scriptiot.github.io/)
+  - [EVM帮助手册-Github](https://scriptiot.github.io/evm_doc/#/zh-cn/evm_what)
+  - [EVM帮助手册-Gitee](https://scriptiot.github.io/evm_doc/#/zh-cn/evm_what)
+  - [EVUE帮助手册-Github](https://scriptiot.github.io/evue_doc/#/zh-cn/evue_what)
+  - [EVUE帮助手册-Gitee](https://scriptiot.github.io/evue_doc/#/zh-cn/evue_what)
+- [论坛](http://forum.evmiot.com/)
+- [Gitee](https://gitee.com/scriptiot/evm)

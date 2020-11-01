@@ -1,41 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?38b5349a9f388be2e650e1cf5105288f";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?0821a1296dd30c150f9e181d84841bf6";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 <head>
-  <meta charset="UTF-8">
-  <title>EVUE</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo.png">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+    <meta charset="UTF-8">
+    <title>EVM API Documents</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="EVM">
+    <meta name="keywords" content="evm,bytecode,low-code,iot">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./zh-cn/image/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./zh-cn/image/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./zh-cn/image/logo.png">
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+    <link rel="stylesheet" href="//unpkg.com/docsify-toc@1.0.0/dist/toc.css">
+    <style type="text/css">
+        body {
+            font-family: Helvetica, Arial, "Lucida Grande", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+        }
+
+        .markdown-section code {
+            white-space: pre-line;
+        }
+
+        .nav {
+            margin-top: 40px;
+            width: var(--toc-width, 320px);
+            align-self: flex-start;
+            flex: 0 0 auto;
+        }
+
+        .page_toc ul {
+            line-height: 2em;
+        }
+    </style>
 </head>
+
 <body>
-  <nav>
-    <a href="#/">EN</a>
-    <a href="#/zh-cn/">中文</a>
-  </nav>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'EVM课程教案',
-      // repo: '', //仓库地址
-      logo: '/assets/evm-logo.jpg',
-      coverpage: true,
-      loadSidebar: true,
-      autoHeader: true,
-      maxLevel: 1,
-      subMaxLevel: 1,
-      loadNavbar: true,
-      mergeNavbar: true,
-      formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
-    }
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <div id="app">Loading ...</div>
+    <script>
+        window.$docsify = {
+            name: 'EVM',
+            repo: 'https://github.com/scriptiot/evm',
+            logo: 'zh-cn/image/evm_logo.jpg height="64px"',
+            auto2top: true,
+            autoHeader: true,
+            coverpage: true,
+            // homepage: 'README.md',
+            loadSidebar: true,
+            loadNavbar: true,
+            mergeNavbar: true,
+            nameLink: 'https://github.com/scriptiot/evm',
+            // notFoundPage: {
+            //     '/': 'evm_what.md',
+            // }
+            onlyCover: true,
+            subMaxLevel: 0,
+            search: {
+                placeholder: {
+                    '/': '搜索',
+                    '/zh-cn/': '搜索',
+                    '/en-us/': 'Type to search'
+                },
+                noData: {
+                    '/': '找不到结果',
+                    '/zh-cn/': '找不到结果',
+                    '/en-us/': 'No Results'
+                }
+            },
+            plugins: [
+                function(hook) {
+                    var footer = [
+                        '<footer style="height: 60px">',
+                        '<span><a href="https://github.com/scriptiot/evm" target="_blank"> EVM </a></span>',
+                        '<span>Powered By <a href="https://github.com/QingWei-Li/docsify" target="_blank">docsify</a>.</span>',
+                        '</footer>'
+                    ].join('');
+
+                    hook.afterEach(function(html) {
+                        return html + footer
+                    })
+                }
+            ]
+        }
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-c.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-javascript.min.js"></script>
+    <script src="//unpkg.com/docsify-copy-code"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="//unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
+    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        const gitalk = new Gitalk({
+            clientID: 'Github Application Client ID',
+            clientSecret: 'Github Application Client Secret',
+            repo: 'Github repo',
+            owner: 'Github repo owner',
+            admin: ['Github repo collaborators, only these guys can initialize github issues'],
+            // facebook-like distraction free mode
+            distractionFreeMode: false
+        })
+    </script>
 </body>
 </html>
-
