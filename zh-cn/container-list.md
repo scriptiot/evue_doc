@@ -215,7 +215,11 @@ cd evuesimulator-linux-v2.0
 
 ```powershell
 cd evuesimulator-windows-v2.0
+<<<<<<< Updated upstream
 evuesimulator.exe test/list/
+=======
+evuesimulator.exe ../../test/list/
+>>>>>>> Stashed changes
 ```
 
 ## 运行截图
