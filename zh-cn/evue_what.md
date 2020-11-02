@@ -55,8 +55,8 @@
 | 文件      |    说明|
 | :-------- | --------:|
 | **bin**| 二进制目录 |
-| **bin/x86_64-linux-gnu/evue**| evue二进制程序 |
-| **bin/x86_64-window-mingw/evue.exe**| evue二进制程序堆栈信息配置 |
+| **bin/x86_64-linux-gnu/**| linux平台evue二进制程序 |
+| **bin/x86_64-window-mingw/**| windows平台evue二进制程序 |
 | **frameworks**| js app框架 |
 | **include**|   evm头文件  |
 | **lib**|  静态库目录 |
