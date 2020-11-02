@@ -50,7 +50,6 @@
 - 全面兼容鸿蒙OS HML语法
 - PC模拟器支持，PC端开发，设备端运行
 
-<<<<<<< Updated upstream
 ## 4. 目录结构
 
 | 文件      |    说明|
@@ -74,41 +73,38 @@
 二、基于EVUE的智能穿戴应用展示
 ========================================
 
+## 1. 启动页面
 
-=======
-## 4. 基于EVUE的手表应用展示
-* 启动页面
+![](./image/evue-litewearable-1.png)
 
-![](http://statics.evmiot.com/evue_20201101232625.jpg)
+## 2. 首页
 
-* 首页
+![](./image/evue-litewearable-2.png)
 
-![](http://statics.evmiot.com/evue_20201101232508.jpg)
+## 3. 电话
 
-* 电话
+![](./image/evue-litewearable-3.png)
 
-![](http://statics.evmiot.com/evue_20201101232519.jpg)
+## 4. 运动曲线
 
-* 运动曲线
+![](./image/evue-litewearable-4.png)
 
-![](http://statics.evmiot.com/evue_20201101232526.jpg)
+## 5. 音乐应用
 
-* 音乐应用
+![](./image/evue-litewearable-5.png)
 
-![](http://statics.evmiot.com/evue_20201101232534.jpg)
+## 6. 天气应用
 
-* 天气应用
+![](./image/evue-litewearable-6.png)
 
-![](http://statics.evmiot.com/evue_20201101232541.jpg)
+## 7. 运动记录
 
-* 运动记录
+![](./image/evue-litewearable-7.png)
 
-![](http://statics.evmiot.com/evue_20201101232550.jpg)
+## 8. 更新
 
-* 更新
+![](./image/evue-litewearable-8.png)
 
-![](http://statics.evmiot.com/evue_20201101232604.jpg)
->>>>>>> Stashed changes
 
 三、加入EVM
 ========================================
