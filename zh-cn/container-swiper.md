@@ -52,46 +52,438 @@
 
 > 请注意默认还有一个[app.js](/zh-cn/js-file "app.js")文件。
 
-代码仓库地址：`http://gitlab.evmiot.com:12306/wzedmund/evm-jsfwk-littlevgl-qt/tree/dev/test/test-swiper`
+代码仓库地址：`http://gitlab.evmiot.com:12306/wzedmund/evm-jsfwk-littlevgl-qt/tree/dev/test/swiper`
 
 **index.hml**
 
 ```html
-<swiper autoplay=true interval=1000 vertical=true duration=100 style="
-    width: 350px;height: 350px;border-width: 1px;border-style: solid;
-    border-color: black;left: 50px;top: 50px;margin: 50px;">
-    <div style="width: 350px;height: 350px;background-color: red;">
-        <text>box 1</text>
+<swiper class="container" index=0 vertical=false uration="500" onchange="swiperChange">
+    <div style="background-color: white;
+                text-align: center;
+                width: 454px;
+                height: 454px;
+                border-width: 0px;">
+        <text style="left: 140px;
+                     top: 70px;
+                     width: 180px;
+                     height: 60px;
+                     text-align: center;
+                     font-size: 20px;
+                     font-family: simsun;"> {{title}} </text>
+        <image id="logo-animation" src="./common/images/logo.bin" style="left: 80px;
+                                                                         top: 120px;
+                                                                         text-align: center;"></image>
     </div>
-    <div style="width: 350px;height: 350px;background-color: green;">
-        <text>box 2</text>
+    <div style="background-color: white;
+                text-align: center;
+                width: 454px;
+                height: 454px;
+                border-width: 0px;">
+        <text style="left: 180px;
+                     top: 70px;
+                     width: 180px;
+                     height: 100px;
+                     text-align: center;
+                     font-size: 30px;
+                     font-family: simsun;"> 图标 </text>
+        <div style="flex-direction: row;
+                    align-items: center;
+                    border-width: 0px;
+                    left: 90px;
+                    top: 120px;
+                    width: 300px;
+                    height: 60px;
+                    fade-in-time: 100;
+                    fade-in-delay: 100">
+            <image src="./common/images/light/appbar.add.bin"
+                   style="fade-in-time: 200;fade-in-delay: 200"></image>
+            <image src="./common/images/light/appbar.clear.bin"
+                   style="fade-in-time: 200; fade-in-delay: 400"></image>
+            <image src="./common/images/light/appbar.cd.bin" 
+                   style="fade-in-time: 200; fade-in-delay: 600"></image>
+        </div>
+        <div style="flex-direction: row;left: 90px;top: 180px;border-width: 0px;width: 300px;height: 60px;">
+            <image src="./common/images/light/appbar.disk.bin"
+                   style="fade-in-time: 200;fade-in-delay: 800;"></image>
+            <image src="./common/images/light/appbar.app.bin"
+                   style="fade-in-time: 200;fade-in-delay: 1000;"></image>
+            <image src="./common/images/light/appbar.alert.bin"
+                   style="fade-in-time: 200;fade-in-delay: 1200;"></image>
+        </div>
+        <div style="flex-direction: row;left: 90px;top: 240px;border-width: 0px;width: 300px;height: 60px;">
+            <image src="./common/images/light/appbar.cart.bin"
+                   style="fade-in-time: 200;fade-in-delay: 1400;"></image>
+            <image src="./common/images/light/appbar.clock.bin"
+                   style="fade-in-time: 200;fade-in-delay: 1600;"></image>
+            <image src="./common/images/light/appbar.adobe.bridge.bin"
+                   style="fade-in-time: 200;fade-in-delay: 1800;"></image>
+        </div>
+        <div style="flex-direction: row;left: 90px;top: 300px;border-width: 0px;width: 300px;height: 60px;">
+            <image src="./common/images/light/appbar.arrow.expand.bin"
+                   style="fade-in-time: 200;fade-in-delay: 2000;"></image>
+            <image src="./common/images/light/appbar.delete.bin"
+                   style="fade-in-time: 200;fade-in-delay: 2200;"></image>
+            <image src="./common/images/light/appbar.browser.chrome.bin"
+                   style="fade-in-time: 200;fade-in-delay: 2400;"></image>
+        </div>
     </div>
-    <div style="width: 350px;height: 350px;background-color: yellow;">
-        <text>box 3</text>
+    <div style="background-color:white;text-align:center;width:454px; height:454px; border-width:0px;">
+        <text style="left: 110px;
+                     top: 70px;
+                     width: 200px;
+                     height: 60px;
+                     text-align: center;
+                     font-size: 30px;
+                     font-family: simsun;"> 列表和跑马灯 </text>
+        <list id="list_container">
+            <list-item id="listitem2">
+                <marquee scrollamount="3" style="width: 100px;
+                                                 height: 100px;
+                                                 text-align: center;
+                                                 margin-top: 10px;
+                                                 color: red;
+                                                 font-size: 30px;
+                                                 font-family: simsun; ">
+                    1234567890
+                </marquee>
+            </list-item>
+            <list-item id="listitem2">
+                <marquee scrollamount="30" style="width: 100px;
+                                                  height: 100px;
+                                                  text-align: center;
+                                                  margin-top: 10px;
+                                                  color: red;
+                                                  font-size: 30px;
+                                                  font-family: simsun;">
+                    abcedfghijklmnopqrstuvwxys
+                </marquee>
+            </list-item>
+            <list-item id="listitem2">
+                <marquee scrollamount="300" style="width: 100px;
+                                                   height: 100px;
+                                                   text-align: center;
+                                                   margin-top: 10px;
+                                                   color: red;
+                                                   font-size: 30px;
+                                                   font-family: simsun;">
+                    八佰和金刚川
+                </marquee>
+            </list-item>
+        </list>
     </div>
-    <div style="width: 350px;height: 350px;background-color: blue;">
-        <text>box 4</text>
+    <div style="background-color: white;
+                text-align: center;
+                width: 454px;
+                height: 454px;
+                border-width: 0px;">
+        <text style="left: 110px;
+                     top: 70px;
+                     width: 200px;
+                     height: 60px;
+                     text-align: center;
+                     font-size: 30px;
+                     font-family: simsun;"> 按钮 </text>
+        <list id="list_container">
+            <list-item id="listitem1">
+                <input type="button" style="left: 85px;
+                                            width: 130px;
+                                            height: 40px;"
+                       value="slider" onclick="onPage1" onlongpress="onlongpress"></input>
+            </list-item>
+            <list-item id="listitem1">
+                <input type="button" style="left: 85px;
+                                            width: 130px;
+                                            height: 40px;"
+                       value="switch" onclick="onPage2" onlongpress="onlongpress"></input>
+            </list-item>
+            <list-item id="listitem1">
+                <input type="button" style="left: 85px;
+                                            width: 130px;
+                                            height: 40px;"
+                       value="progress" onclick="onPage3" onlongpress="onlongpress"></input>
+            </list-item>
+        </list>
     </div>
+    <div style="background-color: white;
+                text-align: center;
+                width: 454px;
+                height: 454px;
+                border-width: 0px;">
+        <text style="left: 110px;
+                     top: 70px;
+                     width: 200px;
+                     height: 60px;
+                     text-align: center;
+                     font-size: 30px;
+                     font-family: simsun;"> 图表 </text>
+        <chart style="left:72px; top:130px; width:300px; height: 250px"></chart>
+    </div>
+    <div style="background-color: white;
+                text-align: center;
+                width: 454px;
+                height: 454px;
+                border-width: 0px;">
+        <text style="left: 100px;
+                     top: 70px;
+                     width: 200px;
+                     height: 60px;
+                     text-align: center;
+                     font-size: 30px;
+                     font-family:simsun;"> 滑动选择器 </text>
+        <picker-view type="text" selected="0" range="['a','b','c','d']"
+                     style="left: 190px;
+                            top: 120px;
+                            width: 280px;
+                            height: 50px;
+                            margin-top: 10px;
+                            margin-left: 85px;"></picker-view>
+        <picker-view type="text" selected="1" range="['a','b','c','d']"
+                     style="left: 190px;
+                            top: 180px;
+                            width: 280px;
+                            height: 50px;
+                            margin-top: 10px;
+                            margin-left: 85px;"></picker-view>
+        <picker-view type="text" selected="2" range="['a','b','c','d']"
+                     style="left: 190px;
+                            top: 240px;
+                            width: 280px;
+                            height: 50px;
+                            margin-top: 10px;
+                            margin-left: 85px;"></picker-view>
+        <picker-view type="text" selected="3" range="['a','b','c','d']"
+                     style="left: 190px;
+                            top: 300px;
+                            width: 280px;
+                            height: 50px;
+                            margin-top: 10px;
+                            margin-left: 85px;"></picker-view>
+        <picker-view type="text" selected="4" range="['a','b','c','d']"
+                     style="left: 190px;
+                            top: 360px;
+                            width: 280px;
+                            height: 50px;
+                            margin-top: 10px;
+                            margin-left: 85px;"></picker-view>
+    </div>
+    <!-- <div id="div_animation">
+        <text style="left:100px; top:70px; width: 200px; height: 60px; text-align: center; font-size: 30px; font-family:simsun;"> 动画 </text>
+        <image id="image_angle_animation" src="./common/images/logo.bin"></image>
+    </div> -->
 </swiper>
 ```
 
 **index.css**
 
 ```css
-.container {
-    flex-direction: row;
-    justify-content: flex-start;
+#logo-animation {
+    animation-name: image-animation;
+    animation-delay: 0;
+    animation-duration: 200;
+    animation-timing-function: linear;
+    animation-fill-mode: none;
+    animation-iteration-count: 1;
+}
+
+text {
+    animation-name: text;
+    animation-delay: 200;
+    animation-duration: 200;
+    animation-timing-function: linear;
+    animation-fill-mode: none;
+    animation-iteration-count: 1;
+    animation-property: x;
+    animation-property-from: 0;
+    animation-property-to: 140;
+}
+
+#id_container {
+    display: flex;
+    width: 454px;
+    height: 454px;
+    border-width: 2px;
+    border-radius: 2px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#list_container {
+    width: 300px;
+    height: 250px;
+    left: 70px;
+    top: 140px;
+}
+
+#separator {
+    width: 454px;
+    height: 4px;
+    background-color: white;
+}
+
+.title {
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    left: 50px;
+    top: 10px;
+}
+
+#id_title {
+    font-size: 30px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+}
+
+#listitem1 {
+    flex-direction: column;
     align-items: center;
-    /*flex-wrap: wrap;*/
+    width: 300px;
+    height: 60px;
+    margin: 0px;
+    padding: 10px;
+}
+
+#listitem2 {
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: 50px;
+    margin: 0px;
+    padding: 5px;
+}
+
+#div_animation {
+    background-color:white;
+    text-align:center;
+    width:454px; 
+    height:454px; 
+    border-width:0px;
+}
+
+#animation1 {
+    left: 80px;
+    top: 145px;
+    width: 300px; 
+    height: 200px;
+    border-width: 0px;
+    background-color: #123456;
+    animation-name: color-animation;
+    animation-delay: 0;
+    animation-duration: 1000;
+    animation-timing-function: ease-in;
+    animation-fill-mode: none;
+    animation-iteration-count: 1;
+}
+
+#image_angle_animation{
+    left: 100px;
+    top: 150px;
+    background-color: #123456;
+    animation-name: angle-animation;
+    animation-delay: 0;
+    animation-duration: 1000;
+    animation-timing-function: linear;
+    animation-fill-mode: none;
+    animation-iteration-count: 200;
+}
+
+@keyframes image-animation
+{
+    from {
+        x: 0;
+    }
+    to {
+        x: 80;
+    }
+}
+
+@keyframes color-animation
+{
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: #123456;
+    }
+}
+
+@keyframes angle-animation
+{
+    from {
+        angle: 0;
+    }
+    to {
+        angle: 3600;
+    }
 }
 ```
 
 **index.js**
 
 ```javascript
+router = require("@system.router")
+
 export default {
     data: {
-        title: 'show-test-swiper'
+        title: 'show-abcedfghijklmn',
+        pageIndex: 0,
+        address: {
+            city: 'beijing'
+        }
+    },
+
+    onInit: function() {
+        print("==========onInit==========")
+    },
+
+    onReady: function() {
+        // this.data.pageIndex = 20;
+        // this.data.title = '30000000';
+        print("==========onReady==========")
+        print(this.data)
+        print(this.data.pageIndex)
+    },
+
+    onShow: function() {
+        print("==========onShow==========")
+    },
+
+    onHide: function() {
+        print("==========onHide==========")
+    },
+
+    onDestroy: function() {
+        print("==========onDestroy==========")
+    },
+
+    onPage1: function(obj, x, y) {
+        print("==========onclick==========")
+        print(x);
+        print(x);
+        router.replace({
+            uri: "pages/slider/index"
+        })
+    },
+
+    onPage2: function(obj, x, y) {
+        print("==========onclick==========")
+        print(x);
+        print(x);
+        router.replace({
+            uri: "pages/switch/index"
+        })
+    },
+
+    onPage3: function(obj, x, y) {
+        print("==========onclick==========")
+        print(x);
+        print(x);
+        router.replace({
+            uri: "pages/progress/index"
+        })
     }
 }
 ```
@@ -104,7 +496,7 @@ export default {
 
 ```shell
 wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
-./evue ../../test/test-swiper/
+./evue ../../test/swiper/
 ```
 
 **Windows**
