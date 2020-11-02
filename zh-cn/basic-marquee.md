@@ -144,15 +144,15 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
-./evue ../../test/test-marquee/
+cd evuesimulator-linux-v2.0
+./evuesimulator test/test-marquee/
 ```
 
 **Windows**
 
 ```powershell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
-evuesimulator.exe ../../test/test-marquee/
+cd evuesimulator-windows-v2.0
+evuesimulator.exe test/test-marquee/
 ```
 
 ## 运行截图

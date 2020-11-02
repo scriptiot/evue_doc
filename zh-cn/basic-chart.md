@@ -184,15 +184,15 @@ export default {
 **Linux**
 
 ```shell
-wanli@wanli-PC:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-linux-gnu$
-./evue ../../test/test-chart/
+cd evuesimulator-linux-v2.0
+./evuesimulator test/test-chart/
 ```
 
 **Windows**
 
 ```powershell
-PS D:~/projects/evm-jsfwk-littlevgl-qt/bin/x86_64-window-mingw>
-evuesimulator.exe ../../test/test-chart/
+cd evuesimulator-windows-v2.0
+evuesimulator.exe test/test-chart/
 ```
 
 ## 运行截图
