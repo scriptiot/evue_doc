@@ -70,9 +70,8 @@
                      text-align: center;
                      font-size: 20px;
                      font-family: simsun;"> {{title}} </text>
-        <image id="logo-animation" src="./common/images/logo.bin" style="left: 80px;
-                                                                         top: 120px;
-                                                                         text-align: center;"></image>
+        <image id="logo-animation" src="./common/images/logo.bin"
+               style="left: 80px;top: 120px;text-align: center;"></image>
     </div>
     <div style="background-color: white;
                 text-align: center;
@@ -102,7 +101,12 @@
             <image src="./common/images/light/appbar.cd.bin" 
                    style="fade-in-time: 200; fade-in-delay: 600"></image>
         </div>
-        <div style="flex-direction: row;left: 90px;top: 180px;border-width: 0px;width: 300px;height: 60px;">
+        <div style="flex-direction: row;
+                    left: 90px;
+                    top: 180px;
+                    border-width: 0px;
+                    width: 300px;
+                    height: 60px;">
             <image src="./common/images/light/appbar.disk.bin"
                    style="fade-in-time: 200;fade-in-delay: 800;"></image>
             <image src="./common/images/light/appbar.app.bin"
@@ -110,7 +114,12 @@
             <image src="./common/images/light/appbar.alert.bin"
                    style="fade-in-time: 200;fade-in-delay: 1200;"></image>
         </div>
-        <div style="flex-direction: row;left: 90px;top: 240px;border-width: 0px;width: 300px;height: 60px;">
+        <div style="flex-direction: row;
+                    left: 90px;
+                    top: 240px;
+                    border-width: 0px;
+                    width: 300px;
+                    height: 60px;">
             <image src="./common/images/light/appbar.cart.bin"
                    style="fade-in-time: 200;fade-in-delay: 1400;"></image>
             <image src="./common/images/light/appbar.clock.bin"
@@ -118,7 +127,12 @@
             <image src="./common/images/light/appbar.adobe.bridge.bin"
                    style="fade-in-time: 200;fade-in-delay: 1800;"></image>
         </div>
-        <div style="flex-direction: row;left: 90px;top: 300px;border-width: 0px;width: 300px;height: 60px;">
+        <div style="flex-direction: row;
+                    left: 90px;
+                    top: 300px;
+                    border-width: 0px;
+                    width: 300px;
+                    height: 60px;">
             <image src="./common/images/light/appbar.arrow.expand.bin"
                    style="fade-in-time: 200;fade-in-delay: 2000;"></image>
             <image src="./common/images/light/appbar.delete.bin"
@@ -127,7 +141,11 @@
                    style="fade-in-time: 200;fade-in-delay: 2400;"></image>
         </div>
     </div>
-    <div style="background-color:white;text-align:center;width:454px; height:454px; border-width:0px;">
+    <div style="background-color: white;
+                text-align: center;
+                width: 454px;
+                height: 454px;
+                border-width:0px;">
         <text style="left: 110px;
                      top: 70px;
                      width: 200px;
@@ -185,22 +203,16 @@
                      font-family: simsun;"> 按钮 </text>
         <list id="list_container">
             <list-item id="listitem1">
-                <input type="button" style="left: 85px;
-                                            width: 130px;
-                                            height: 40px;"
-                       value="slider" onclick="onPage1" onlongpress="onlongpress"></input>
+                <input type="button" value="slider" onclick="onPage1" onlongpress="onlongpress"
+                       style="left: 85px;width: 130px;height: 40px;"></input>
             </list-item>
             <list-item id="listitem1">
-                <input type="button" style="left: 85px;
-                                            width: 130px;
-                                            height: 40px;"
-                       value="switch" onclick="onPage2" onlongpress="onlongpress"></input>
+                <input type="button" value="switch" onclick="onPage2" onlongpress="onlongpress"
+                       style="left: 85px;width: 130px;height: 40px;"></input>
             </list-item>
             <list-item id="listitem1">
-                <input type="button" style="left: 85px;
-                                            width: 130px;
-                                            height: 40px;"
-                       value="progress" onclick="onPage3" onlongpress="onlongpress"></input>
+                <input type="button" value="progress" onclick="onPage3" onlongpress="onlongpress"
+                       style="left: 85px;width: 130px;height: 40px;"></input>
             </list-item>
         </list>
     </div>
@@ -266,10 +278,6 @@
                             margin-top: 10px;
                             margin-left: 85px;"></picker-view>
     </div>
-    <!-- <div id="div_animation">
-        <text style="left:100px; top:70px; width: 200px; height: 60px; text-align: center; font-size: 30px; font-family:simsun;"> 动画 </text>
-        <image id="image_angle_animation" src="./common/images/logo.bin"></image>
-    </div> -->
 </swiper>
 ```
 
