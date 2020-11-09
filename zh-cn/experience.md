@@ -332,10 +332,5 @@ cd evuesimulator-linux-v2.0
 
 ```shell
 cd evuesimulator-windows-v2.0
-<<<<<<< Updated upstream
 evuesimulator.exe test/LiteWearable/
-=======
-evuesimulator.exe ../../test/LiteWearable/
->>>>>>> Stashed changes
 ```
-
