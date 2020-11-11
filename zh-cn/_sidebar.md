@@ -5,6 +5,7 @@
     * [体验应用](zh-cn/experience "体验应用")
     * [构建布局](zh-cn/layout "构建布局")
     * [绘制样式](zh-cn/style "绘制样式")
+    * [图片处理](zh-cn/picture-processing)
     * [交互事件](zh-cn/interaction "交互事件")
     * [页面路由](zh-cn/routes "页面路由")
     * [应用退出](zh-cn/exiting "应用退出")
